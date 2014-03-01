@@ -1,0 +1,30 @@
+/**
+* Message
+*/
+.message-normal {
+  /* Height 30px */
+  padding: 4px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #555;
+  background: #d4d4d4 /* 75% */;
+  border: 1px solid;
+}
+.message-normal.blue {
+  color: #0000ff;
+  background: #bfbfff;
+}
+.message-normal.green { 
+  color: #00bb00;
+  background: #bfeebf;
+}
+.message-normal.orange {
+  color: #ffa500;
+  background: #ffe8bf;
+}
+.message-normal.red {
+  color: #ff0000;
+  background: #ffbfbf;
+}

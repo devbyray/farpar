@@ -1,0 +1,118 @@
+/**
+* HTML
+*/
+html {
+  min-width: 280px /* 320px */;
+  padding: 20px;
+  font: normal 16px arial;
+  -webkit-text-size-adjust: 100%;
+  color: #000;
+  background-color: #fff; 
+}
+
+
+/**
+* Section
+*/
+.header-main,
+.nav-main,        
+.section-main,
+.article-main,
+.aside-main {
+  margin-bottom: 40px;
+}
+.header-main > *:last-child,
+.nav-main > *:last-child,        
+.section-main > *:last-child,
+.article-main > *:last-child,
+.aside-main > *:last-child {
+  margin-bottom: 0;
+}
+
+/**
+* Container float
+*/
+.container-float20,
+.container-float40 {
+  margin-bottom: -20px;
+  overflow: hidden;
+}
+.container-float20 .float,
+.container-float40 .float {
+  margin-bottom: 20px;
+  float: left;
+}
+.container-float20 .float > *:last-child,
+.container-float40 .float > *:last-child {
+  margin-bottom: 0;
+}
+    
+/* Float20 */
+.container-float20 { 
+  margin-left: -20px;
+}
+.container-float20 .float {
+  margin-left: 20px;
+}
+    
+/* Float40 */
+.container-float40 {
+  margin-left: -40px;
+}
+.container-float40 .float {
+  margin-left: 40px;
+}
+
+
+/**
+* Container liquid
+*/
+.container-liquid {
+  margin-bottom: -20px;
+  margin-left: -2%;
+  overflow: hidden;
+}
+.container-liquid .liquid25,
+.container-liquid .liquid50,
+.container-liquid .liquid75 {
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  margin-left: 2%;
+  float: left;  
+}
+.container-liquid .liquid25 > *:last-child,
+.container-liquid .liquid50 > *:last-child,
+.container-liquid .liquid75 > *:last-child {
+  margin-bottom: 0;
+}
+
+/* Liquid 25 */
+.container-liquid .liquid25 {
+  width: 23%;
+}
+
+/* Liquid 50 */
+.container-liquid .liquid50 {
+  width: 48%;
+}
+
+/* Liquid 75 */
+.container-liquid .liquid75 {
+  width: 73%;
+}
+
+/* Range */
+.range1 .container-liquid,     
+.range320 .container-liquid { 
+  margin-left: 0;
+}
+.range1 .container-liquid .liquid25,
+.range1 .container-liquid .liquid50,
+.range1 .container-liquid .liquid75,
+.range320 .container-liquid .liquid25, 
+.range320 .container-liquid .liquid50,
+.range320 .container-liquid .liquid75 { 
+  width: auto;
+  margin-left: 0;
+  float: none;
+}

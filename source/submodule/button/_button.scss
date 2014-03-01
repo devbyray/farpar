@@ -1,0 +1,64 @@
+/**
+* Button
+*/
+.button-normal,
+.button-large,
+.normalize button,
+.normalize input[type="submit"] {
+  margin-bottom: 10px;
+  display: inline-block;
+  text-align: center;
+  color: #fff !important;
+  background-color: #555;
+  border: none;
+  outline: none;
+}
+.button-normal:hover,
+.button-large:hover,
+.normalize button:hover,
+.normalize input[type="submit"]:hover {
+  text-decoration: none !important; background-color: #808080 /* 75% */;
+}
+
+/* Normal */
+.button-normal,
+.normalize button,
+.normalize input[type="submit"] { 
+  /* height 30px */
+  padding: 5px 15px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* Large */
+.button-large {
+  /* height 60px */
+  padding: 12px 20px;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.button-normal.blue,
+.button-large.blue,
+.normalize button.blue,
+.normalize input[type="submit"].blue { 
+  background-color: #0000ff;
+}
+.button-normal.blue:hover,
+.button-large.blue:hover,
+.normalize button.blue:hover,
+.normalize input[type="submit"].blue:hover {
+  background-color: #4040ff;
+}
+.button-normal.green,
+.button-large.green,
+.normalize button.green,
+.normalize input[type="submit"].green {
+  background-color: #00bb00;
+}
+.button-normal.green:hover,
+.button-large.green:hover,
+.normalize button.green:hover,
+.normalize input[type="submit"].green:hover {
+  background-color: #40cc40;
+}

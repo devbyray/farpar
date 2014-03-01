@@ -1,0 +1,68 @@
+/**
+* Dropdown
+*/
+ul.menu-dropdown {
+  height: 30px;
+  margin-bottom: 20px;
+  list-style-type: none;
+  background-color: #eee;
+}
+ul.menu-dropdown > li {
+  margin-right: 10px;
+  float: left;
+  position: relative;
+}
+ul.menu-dropdown li a {
+  /* Height 30px */
+  padding: 5px 30px;
+  display: block;
+  line-height: 20px;
+  color: #fff;
+  white-space: nowrap;
+}
+ul.menu-dropdown li a {
+  background-color: #555;
+}
+ul.menu-dropdown li > a:hover {
+  background-color: #808080 /* 75% */;
+}
+
+/* level 2 */
+ul.menu-dropdown li ul { 
+  position: absolute;
+  display: none;
+  list-style-type: none;
+}
+ul.menu-dropdown li:hover > ul {
+  display: block;
+}
+ul.menu-dropdown li ul li {
+  position: relative;
+}
+ul.menu-dropdown li ul li a {
+  background-color: #aaa;
+  border-bottom: 1px solid #ccc;
+}
+ul.menu-dropdown li ul li:last-child a {
+  border: none;
+}
+ul.menu-dropdown li ul li a:hover { 
+  background-color: #bfbfbf /* 75% */;
+}
+
+/* level 3 */
+ul.menu-dropdown li ul li ul {
+  top: 0;
+  left: 100%;
+  display: none;
+}
+ul.menu-dropdown li ul li:hover ul {
+  display: block;
+}
+ul.menu-dropdown li ul li ul li a {
+  background-color: #bbb;
+  border-color: #ddd;
+}
+ul.menu-dropdown li ul li ul li a:hover {
+  background-color: #ccc /* 75% */;
+}

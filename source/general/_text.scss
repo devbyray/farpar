@@ -1,0 +1,93 @@
+/**
+* Heading
+*/
+.h1-normal,
+.h2-normal,
+.h3-normal,
+.normalize h1,
+.normalize h2,
+.normalize h3 {
+  line-height: normal;
+  font-weight: bold;
+}
+
+.h1-normal,
+.normalize h1 { 
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.h2-normal,
+.normalize h2 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #aaa;
+}
+
+.h3-normal,
+.normalize h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #aaa;
+}
+
+
+/**
+* Paragraph
+*/
+.p-normal, 
+.normalize p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  color: #000;
+}
+.p-normal:last-child,
+.normalize p:last-child {
+  margin-bottom: 0;
+}
+
+
+/**
+* Horizontal rule
+*/
+.hr-normal,
+.normalize hr {
+  height: 1px;
+  margin-top: 40px;
+  margin-bottom: 40px; 
+  background: #555;
+  border: none;
+}
+
+
+/**
+* Hyperlink
+*/
+.a-normal,
+.normalize a {
+  color: #0000ff;
+}
+.a-normal:hover,
+.normalize a:hover {
+  text-decoration: underline;
+}
+
+
+/**
+* Other
+*/
+strong {
+  font-weight: bold;
+  color: #555;
+}
+
+em {
+  font-style: italic;
+}
+
+mark {
+  background: #ffff00;
+}

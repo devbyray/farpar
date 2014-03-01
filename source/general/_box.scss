@@ -1,0 +1,15 @@
+/**
+* Box
+*/
+.box-normal {
+  padding: 20px;
+  margin-bottom: 20px;
+  display: block;
+  background-color: #eee;
+}
+.box-normal.transparent {
+  background-color: transparent;
+}
+.box-normal > *:last-child {
+  margin-bottom:0;
+}

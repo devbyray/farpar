@@ -1,0 +1,107 @@
+/**
+* Form
+*/
+.form-normal,
+.normalize form {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.form-normal legend,
+.normalize legend {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #555;
+}
+.form-normal label,
+.normalize label {
+  /* Height 30px*/
+  padding: 5px 0;
+  display: block;
+  line-height: 20px;
+}
+.form-normal .error,
+.normalize .error {
+  color: #ff0000;
+  border-color: #ff0000 !important;
+}
+
+/* Input */
+.form-normal input,
+.normalize input {
+  /* Height 30px*/
+  width: 270px /* 280px */;
+  padding: 4px;
+  margin-bottom: 10px;
+  display: block;
+  border: 1px solid #555;
+  border-radius: 0;
+  outline: none;
+}
+.form-normal input.small, 
+.normalize input.small {
+  width: 110px /* 120px */;
+}
+.form-normal input.large,
+.normalize input.large {
+  width: 430px /* 440px */;
+}
+.form-normal input[type="text"],
+.form-normal input[type="email"],
+.form-normal input[type="password"],
+.normalize input[type="text"],
+.normalize input[type="email"],
+.normalize input[type="password"] {
+  -webkit-appearance: none;
+}
+.form-normal input[type="checkbox"],
+.form-normal input[type="radio"],
+.normalize input[type="checkbox"],
+.normalize input[type="radio"] {
+  width: auto;
+  height: 20px;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align:
+  text-top;
+}
+.form-normal input[type="submit"],
+.normalize input[type="submit"] {
+  width: auto;
+  display: inline-block;
+  -webkit-appearance: none;
+}
+
+/* Select */
+.form-normal select,
+.normalize select {
+  width: 280px;
+  height: 30px;
+  padding: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #555;
+  border-radius: 0;
+  outline: none;
+}
+.form-normal select.small,
+.normalize select.small {
+  width: 120px;
+}
+.form-normal select.large,
+.normalize select.large {
+  width: 440px;
+}
+
+/* Textarea */
+.form-normal textarea,
+.normalize textarea {
+  width: 430px /* 440px */;
+  height: 90px /* 100px*/;
+  padding: 4px;
+  margin-bottom: 10px;
+  display: block;
+  border: 1px solid #555;
+  -webkit-appearance: none;
+  border-radius: 0;
+  outline: none;
+}

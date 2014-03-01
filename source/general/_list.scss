@@ -1,0 +1,28 @@
+/**
+* List
+*/
+.ul-normal,
+.ol-normal,
+.normalize ul,
+.normalize ol { 
+  margin-bottom: 20px;
+  margin-left: 1.5em;
+  line-height: 20px;
+}
+
+/* Unordered */
+.ul-normal {
+  list-style-type: square;
+}
+
+/* Data */
+.dl-normal dl,
+.normalize dl {
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+.dl-normal dl dt,
+.normalize dl dt {
+  font-weight: bold;
+  color: #555;
+}
