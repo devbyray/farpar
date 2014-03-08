@@ -1,14 +1,15 @@
 /* line 1, main.scss */
 html {
   color: navy;
+  background-color: ghostWhite;
 }
 
-/* line 5, main.scss */
+/* line 6, main.scss */
 p {
   color: black;
 }
 
-/* line 9, main.scss */
+/* line 10, main.scss */
 a {
   color: maroon;
 }
