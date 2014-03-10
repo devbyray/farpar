@@ -1,15 +1,88 @@
-/* line 1, main.scss */
+@charset "CP850";
+/* line 1, element/text/_text.scss */
 html {
-  color: navy;
+  font-family: "Arial";
+}
+
+/* line 5, element/text/_text.scss */
+.p, .p«blue», .p«italic», .p«small», .box-p, .box-p«bold» {
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* line 12, element/text/_text.scss */
+.p«blue» {
+  color: blue;
+}
+
+/* line 17, element/text/_text.scss */
+.p«italic» {
+  font-style: italic;
+}
+
+/* line 22, element/text/_text.scss */
+.p«small» {
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+/* line 29, element/text/_text.scss */
+.p_other, .p_other«italic» {
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-family: "Times New Roman";
+}
+
+/* line 37, element/text/_text.scss */
+.p_other«italic» {
+  font-style: italic;
+}
+
+/* line 42, element/text/_text.scss */
+.code {
+  padding: 0 4px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 18px;
+  display: block;
+  border: 1px solid grey;
   background-color: ghostWhite;
 }
 
-/* line 6, main.scss */
+/* line 52, element/text/_text.scss */
+.box {
+  padding: 5px;
+  background-color: grey;
+}
+
+/* line 57, element/text/_text.scss */
+.box-p, .box-p«bold» {
+  color: white;
+}
+
+/* line 62, element/text/_text.scss */
+.box-p«bold» {
+  font-weight: bold;
+}
+
+/* line 3, main.scss */
+html {
+  color: navy;
+}
+
+/* line 7, main.scss */
 p {
   color: black;
 }
 
-/* line 10, main.scss */
+/* line 11, main.scss */
 a {
   color: maroon;
 }

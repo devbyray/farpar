@@ -1,0 +1,65 @@
+html {
+	font-family: "Arial";
+}
+
+.p {
+	font-size: 16px;
+	line-height: 20px;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.p«blue» {
+	@extend .p;
+	color: blue;
+}
+
+.p«italic» {
+	@extend .p;
+	font-style: italic;
+}
+
+.p«small» {
+	@extend .p;
+	font-size: 14px;
+	line-height: 18px;
+	margin: 0;
+}
+
+.p_other {
+	font-size: 14px;
+	line-height: 18px;
+	margin-top: 0;
+	margin-bottom: 18px;
+	font-family: "Times New Roman";
+}
+
+.p_other«italic» {
+	@extend .p_other;
+	font-style: italic;
+}
+
+.code {
+	padding: 0 4px;
+	margin-bottom: 20px;
+	font-size: 14px;
+	line-height: 18px;
+	display: block;
+	border: 1px solid grey;
+	background-color: ghostWhite;
+}
+
+.box {
+	padding: 5px;
+	background-color: grey;
+}
+
+.box-p {
+	@extend .p;
+	color: white;
+}
+
+.box-p«bold» {
+	@extend .box-p;
+	font-weight: bold;
+}
