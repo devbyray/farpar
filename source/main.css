@@ -1,88 +1,35 @@
-@charset "CP850";
 /* line 1, element/text/_text.scss */
 html {
-  font-family: "Arial";
+  font: 62.5% "Arial";
 }
 
 /* line 5, element/text/_text.scss */
-.p, .p«blue», .p«italic», .p«small», .box-p, .box-p«bold» {
+body {
   font-size: 16px;
-  line-height: 20px;
-  margin-top: 0;
-  margin-bottom: 20px;
+  font-size: 1.6rem;
+  line-height: 1.2;
 }
 
-/* line 12, element/text/_text.scss */
-.p«blue» {
-  color: blue;
+/* line 9, element/text/_text.scss */
+.h1 {
+  font-size: 30px;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3rem;
 }
 
-/* line 17, element/text/_text.scss */
-.p«italic» {
-  font-style: italic;
+/* line 14, element/text/_text.scss */
+.h2 {
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
 }
 
-/* line 22, element/text/_text.scss */
-.p«small» {
-  font-size: 14px;
-  line-height: 18px;
-  margin-top: 0;
-  margin-bottom: 18px;
-}
-
-/* line 29, element/text/_text.scss */
-.p_other, .p_other«italic» {
-  font-size: 14px;
-  line-height: 18px;
-  margin-top: 0;
-  margin-bottom: 18px;
-  font-family: "Times New Roman";
-}
-
-/* line 37, element/text/_text.scss */
-.p_other«italic» {
-  font-style: italic;
-}
-
-/* line 42, element/text/_text.scss */
-.code {
-  padding: 0 4px;
-  margin-top: -10px;
-  margin-bottom: 20px;
-  font-size: 14px;
-  line-height: 18px;
-  display: block;
-  border: 1px solid grey;
-  background-color: ghostWhite;
-}
-
-/* line 52, element/text/_text.scss */
-.box {
-  padding: 5px;
-  background-color: grey;
-}
-
-/* line 57, element/text/_text.scss */
-.box-p, .box-p«bold» {
-  color: white;
-}
-
-/* line 62, element/text/_text.scss */
-.box-p«bold» {
-  font-weight: bold;
-}
-
-/* line 3, main.scss */
-html {
-  color: navy;
-}
-
-/* line 7, main.scss */
-p {
-  color: black;
-}
-
-/* line 11, main.scss */
-a {
-  color: maroon;
+/* line 19, element/text/_text.scss */
+.p {
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
 }

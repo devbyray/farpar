@@ -1,99 +1,42 @@
 <!doctype html>
 <html lang="">
-  <head>
-    <title></title>    
-    <meta name="description" content="" />
-    <meta name="robots" content="index, follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta charset="utf-8" />
-    <link href="source/main.css" rel="stylesheet" />
-    <script src="source/vendor/angularjs/angular.min.js"></script>
-  </head>
+	<head>
+		<title></title>
+		<meta name="description" content="" />
+		<meta name="robots" content="index, follow" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta charset="utf-8" />
+		<link href="source/main.css" rel="stylesheet" />
+		<script src="source/vendor/angularjs/angular.min.js"></script>
+	</head>
 
-  <body>
-    <header class="section">
-      <h1 class="h1">Farpar 2.0 - The ultimate front-end boilerplate</h1>
-    </header>
+	<body>
+		<header class="section">
+			<h1 class="h1">Farpar 2.0 - The ultimate front-end boilerplate</h1>
+		</header>
 
-    <div class="section">
-      <h1 class="h1">What is Farpar?</h1>
-      <p class="p">
-        Farpar is a front-end boilerplate included with a responsive HTML5 template. It's based on a block/element principle and uses the following technologies:
-      </p>
-      <ul class="ul">
-        <li>npm</li>
-        <li>Grunt</li>
-        <li>Sass</li>
-        <li>Compass</li>
-        <li>AngularJS</li>
-      </ul>
-      <p>We also introduce the Angle Class Syntax for CSS. See the section &quot;Angle Class Syntax (ACS)&quot; for examples.</p>
+		<div class="section">
+			<h1 class="h1">What is Farpar?</h1>
+			<p class="p">
+				Farpar is a front-end boilerplate included with a responsive HTML5 template. It's based on a block/element principle and uses the following technologies:
+			</p>
+			<ul class="ul">
+				<li>npm</li>
+				<li>Grunt</li>
+				<li>Sass</li>
+				<li>Compass</li>
+				<li>AngularJS</li>
+			</ul>
 
-      <h2 class="h2">Download the latest version of Farpar</h2>
-      <p class="p">Release date: <time datetime="2014-31-12">2014 december 31th</time></p>
-      <a href="#" class="button-green">Farpar 2.0</a>
-    </div>
+			<h2 class="h2">Download the latest version of Farpar</h2>
+			<p class="p">Release date: <time datetime="2014-31-12">2014 december 31th</time></p>
+			<a href="#" class="button_green">Farpar 2.0</a>
+		</div>
 
-    <hr />
-
-    <section class="section">
-      <h1 class="h1">Angle Class Syntax (ACS)</h1>
-      <p class="p">
-        Ieder element krijgt standaard een class mee waarvan de naam gelijk is aan het element. Het voordeel is dat deze naam altijd kort en to the point is. 
-      </p>
-      <code class="code"> &lt;p class=&quot;p&quot;&gt;</code>
-      
-      <p class="p">
-        Als er een p element is met een variant noem dan eerst de oorsprong en aansluitend tussen double angle quotes de variant. Als je gebruik maakt van Sass of Less extend dan de oorsprong in de variant class, dat scheelt een class naam in je HTML.
-      </p>
-      <p class="p«small»">Voorbeeld zonder Sass of Less</p>
-      <code class="code"> &lt;p class=&quot;p p«variant»&quot;&gt;</code>
-      <p class="p«small»">Voorbeeld met Sass of Less (aanbevolen)</p>
-      <code class="code"> &lt;p class=&quot;p«variant»&quot;&gt;</code>
-
-      <p class="p">
-        Indien je niet de p class kunt hergebruiken, maak dan een nieuwe class aan ook beginnend met de naam van het element gevolgd door een underscore met daarachter je gewenste naam.
-      </p>
-      <code class="code"> &lt;p class=&quot;p_other»&quot;&gt;</code>     
-
-      <p class="p">
-        Anders dan bij de BEM syntax gebruik je bij elementen binnen een block niet dubbele underscores __ maar simpelweg een hyphen -. Dit is vooral overzichtelijker maar ook logisch. Je begint met het block en geeft na de hyphen aan wat daar binnen valt.
-      </p>
-      <code class="code">
-        &lt;div class=&quot;box&quot;&gt;<br />
-        &nbsp;&nbsp;&lt;p class=&quot;box-p&quot;&gt;&lt;/p&gt;<br />
-        &lt;/div&gt;
-      </code>
-
-
-      <h1 class="h1">Voorbeelden (bekijk ook de source)</h1>
-      <p class="p">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-      </p>
-      <p class="p«blue»">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-      </p>
-      <p class="p«blue» p«italic»">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-      </p>
-      <p class="p_other«italic»">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-      </p>
-
-      <div class="box">
-        <p class="box-p">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.         
-        </p>
-        <p class="box-p«bold»">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-        </p>        
-      </div>
-    </section>
-
-    <script>document.write('<script src="http://'
-      + (location.host || 'localhost').split(':')[0]
-      + ':35729/livereload.js"></'
-      + 'script>')
-    </script>
-  </body>
+		<script>document.write('<script src="http://'
+			+ (location.host || 'localhost').split(':')[0]
+			+ ':35729/livereload.js"></'
+			+ 'script>')
+		</script>
+	</body>
 </html>
