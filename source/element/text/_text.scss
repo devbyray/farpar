@@ -3,20 +3,37 @@ html {
 }
 
 body {
-	@include text-size();
+	@include font-size(1.6);
+	line-height: 1.2;
 }
 
-.h1 {
+
+.h1,
+.normalize h1 {
 	@include text-size(3);
-	margin-bottom: 3rem;
 }
 
-.h2 {
+.h2,
+.normalize h2 {
 	@include text-size(2);
-	margin-bottom: 2rem;
 }
 
-.p {
+.h3,
+.normalize h3 {
 	@include text-size();
-	margin-bottom: 1rem;
+	color: $darkGrey;
+}
+
+.p,
+.normalize p {
+	@include text-size();
+}
+
+.hr,
+.normalize hr {
+	height: 1px;
+	margin-top: 3.2rem;
+	margin-bottom: 3.2rem;
+	border: none;
+	background-color: $darkGrey;
 }

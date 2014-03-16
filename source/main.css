@@ -1,3 +1,6 @@
+/**
+ * Color
+ */
 /* line 1, element/text/_text.scss */
 html {
   font: 62.5% "Arial";
@@ -10,26 +13,53 @@ body {
   line-height: 1.2;
 }
 
-/* line 9, element/text/_text.scss */
-.h1 {
+/* line 12, element/text/_text.scss */
+.h1,
+.normalize h1 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   font-size: 30px;
   font-size: 3rem;
   line-height: 1.2;
-  margin-bottom: 3rem;
 }
 
-/* line 14, element/text/_text.scss */
-.h2 {
+/* line 17, element/text/_text.scss */
+.h2,
+.normalize h2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   font-size: 20px;
   font-size: 2rem;
   line-height: 1.2;
-  margin-bottom: 2rem;
 }
 
-/* line 19, element/text/_text.scss */
-.p {
+/* line 22, element/text/_text.scss */
+.h3,
+.normalize h3 {
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.2;
-  margin-bottom: 1rem;
+  color: #555555;
+}
+
+/* line 28, element/text/_text.scss */
+.p,
+.normalize p {
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+/* line 33, element/text/_text.scss */
+.hr,
+.normalize hr {
+  height: 1px;
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+  border: none;
+  background-color: #555555;
 }

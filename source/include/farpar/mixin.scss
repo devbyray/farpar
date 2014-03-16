@@ -1,10 +1,11 @@
 @mixin font-size($fontSize: 1.6) {
 	font-size: ($fontSize * 10) + px;
 	font-size: $fontSize + rem;
-	line-height: $lineHeight;
 }
 
 @mixin text-size($fontSize: 1.6, $lineHeight: 1.2) {
+	margin-top: $fontSize + rem;
+	margin-bottom: $fontSize + rem;
 	font-size: ($fontSize * 10) + px;
 	font-size: $fontSize + rem;
 	line-height: $lineHeight;
