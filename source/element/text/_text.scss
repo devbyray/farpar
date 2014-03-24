@@ -1,39 +1,67 @@
 html {
-	font: 62.5% "Arial";
+	font: 100% "Arial";
 }
 
 body {
-	@include font-size(1.6);
+	@include font-size(16);
 	line-height: 1.2;
 }
 
-
 .h1,
 .normalize h1 {
-	@include text-size(3);
+	@include text-block(32);
 }
 
 .h2,
 .normalize h2 {
-	@include text-size(2);
+	@include text-block(24);
 }
 
 .h3,
 .normalize h3 {
-	@include text-size();
+	@include text-block(20);
 	color: $darkGrey;
 }
 
 .p,
 .normalize p {
-	@include text-size();
+	@include text-block();
 }
 
 .hr,
 .normalize hr {
 	height: 1px;
-	margin-top: 3.2rem;
-	margin-bottom: 3.2rem;
-	border: none;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 	background-color: $darkGrey;
+	border: none;
+}
+
+.dummy {
+	display: block;
+	visibility: visible;
+	width: auto;
+	height: auto;
+	box-sizing: content-box;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	z-index: 0;
+	top: auto;
+	right: auto;
+	bottom: auto;
+	left: auto;
+	font-family: "Arial";
+	font-size: 16px;
+	font-style: normal;
+	line-height: normal;
+	color: black;
+	text-align: left;
+	text-decoration: none;
+	text-shadow: 0;
+	vertical-align: baseline;
+	background: none;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
 }

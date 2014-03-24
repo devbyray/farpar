@@ -1,12 +1,16 @@
-@mixin font-size($fontSize: 1.6) {
-	font-size: ($fontSize * 10) + px;
-	font-size: $fontSize + rem;
+@mixin font-size($fontSize: 16) {
+	font-size: $fontSize + px;
+	font-size: ($fontSize / 16) + rem;
 }
 
-@mixin text-size($fontSize: 1.6, $lineHeight: 1.2) {
-	margin-top: $fontSize + rem;
-	margin-bottom: $fontSize + rem;
-	font-size: ($fontSize * 10) + px;
-	font-size: $fontSize + rem;
+@mixin text-block($fontSize: 16, $lineHeight: 1.2) {
+	margin-top: ($fontSize / 16) + rem;
+	margin-bottom: ($fontSize / 16) + rem;
+	font-size: $fontSize + px;
+	font-size: ($fontSize / 16) + rem;
 	line-height: $lineHeight;
-} 
+}
+
+@mixin px-rem($property, $value: 1) {
+	#{$property}: ($value / 16) + rem;
+}
