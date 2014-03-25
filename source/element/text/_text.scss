@@ -37,8 +37,8 @@ body {
 	border: none;
 }
 
-.dummy {
-	display: block;
+.dummy1 {
+	display: inline;
 	visibility: visible;
 	width: auto;
 	height: auto;
@@ -46,14 +46,15 @@ body {
 	padding: 0;
 	margin: 0;
 	position: relative;
-	z-index: 0;
 	top: auto;
 	right: auto;
 	bottom: auto;
 	left: auto;
-	font-family: "Arial";
-	font-size: 16px;
-	font-style: normal;
+	z-index: 0;
+	float: none;
+	clear: none;
+	transform: none;
+	font: 16px "Arial";
 	line-height: normal;
 	color: black;
 	text-align: left;
@@ -64,4 +65,38 @@ body {
 	border: none;
 	border-radius: 0;
 	box-shadow: none;
+	transition: all 0 ease 0;
+	animation: none 0 ease 0 1 normal none running;
+}
+
+.dummy2 {
+	animation: none 0 ease 0 1 normal none running;
+	background: none;
+	border: none;
+	border-radius: 0;
+	bottom: auto;
+	box-shadow: none;
+	box-sizing: content-box;
+	clear: none;
+	color: black;
+	display: inline;
+	float: none;
+	font: 16px "Arial";
+	height: auto;
+	left: auto;
+	line-height: normal;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	right: auto;
+	text-align: left;
+	text-decoration: none;
+	text-shadow: 0;
+	top: auto;
+	transform: none;
+	transition: all 0 ease 0;
+	vertical-align: baseline;
+	visibility: visible;
+	width: auto;
+	z-index: 0;
 }
