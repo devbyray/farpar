@@ -7,47 +7,41 @@
 /* line 5, element/text/_text.scss */
 html {
   font-family: "Arial";
-}
-
-/* line 9, element/text/_text.scss */
-body {
-  font-size: 16px;
-  font-size: 1rem;
   line-height: 1.2;
 }
 
 /**
  * Heading
  */
-/* line 20, element/text/_text.scss */
+/* line 16, element/text/_text.scss */
 .h1,
 .wysiwyg h1 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  font-size: 32px;
   font-size: 2rem;
-  line-height: 1.2;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
-/* line 25, element/text/_text.scss */
+/* line 21, element/text/_text.scss */
 .h2,
 .wysiwyg h2 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  font-size: 24px;
   font-size: 1.5rem;
-  line-height: 1.2;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
-/* line 30, element/text/_text.scss */
+/* line 26, element/text/_text.scss */
 .h3,
 .wysiwyg h3 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-  font-size: 20px;
   font-size: 1.25rem;
-  line-height: 1.2;
-  color: #555555;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+/* line 31, element/text/_text.scss */
+.h4,
+.wysiwyg h4 {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 /**
@@ -56,14 +50,14 @@ body {
 /* line 41, element/text/_text.scss */
 .p,
 .wysiwyg p {
-  margin-top: 1rem;
   margin-bottom: 1rem;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.2;
+  margin-top: 1rem;
 }
 
-/* line 46, element/text/_text.scss */
+/**
+ * Other
+ */
+/* line 51, element/text/_text.scss */
 .hr,
 .wysiwyg hr {
   background-color: #555555;
