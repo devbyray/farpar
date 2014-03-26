@@ -1,5 +1,9 @@
+/**
+ * Default text
+ */
+
 html {
-	font: 100% "Arial";
+	font-family: "Arial";
 }
 
 body {
@@ -7,96 +11,42 @@ body {
 	line-height: 1.2;
 }
 
+
+/**
+ * Heading
+ */
+
 .h1,
-.normalize h1 {
+.wysiwyg h1 {
 	@include text-block(32);
 }
 
 .h2,
-.normalize h2 {
+.wysiwyg h2 {
 	@include text-block(24);
 }
 
 .h3,
-.normalize h3 {
+.wysiwyg h3 {
 	@include text-block(20);
 	color: $darkGrey;
 }
 
+
+/**
+ * Paragrapgh
+ */
+
 .p,
-.normalize p {
+.wysiwyg p {
 	@include text-block();
 }
 
 .hr,
-.normalize hr {
-	height: 1px;
-	margin-top: 2rem;
-	margin-bottom: 2rem;
+.wysiwyg hr {
 	background-color: $darkGrey;
 	border: none;
-}
-
-.dummy1 {
-	display: inline;
-	visibility: visible;
-	width: auto;
-	height: auto;
-	box-sizing: content-box;
-	padding: 0;
-	margin: 0;
-	position: relative;
-	top: auto;
-	right: auto;
-	bottom: auto;
-	left: auto;
-	z-index: 0;
-	float: none;
-	clear: none;
-	transform: none;
-	font: 16px "Arial";
-	line-height: normal;
-	color: black;
-	text-align: left;
-	text-decoration: none;
-	text-shadow: 0;
-	vertical-align: baseline;
-	background: none;
-	border: none;
-	border-radius: 0;
-	box-shadow: none;
-	transition: all 0 ease 0;
-	animation: none 0 ease 0 1 normal none running;
-}
-
-.dummy2 {
-	animation: none 0 ease 0 1 normal none running;
-	background: none;
-	border: none;
-	border-radius: 0;
-	bottom: auto;
-	box-shadow: none;
-	box-sizing: content-box;
-	clear: none;
-	color: black;
-	display: inline;
-	float: none;
-	font: 16px "Arial";
-	height: auto;
-	left: auto;
-	line-height: normal;
-	margin: 0;
-	padding: 0;
-	position: relative;
-	right: auto;
-	text-align: left;
-	text-decoration: none;
-	text-shadow: 0;
-	top: auto;
-	transform: none;
-	transition: all 0 ease 0;
-	vertical-align: baseline;
-	visibility: visible;
-	width: auto;
-	z-index: 0;
+	height: 1px;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
 }
