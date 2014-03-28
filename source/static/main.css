@@ -1,10 +1,11 @@
 /**
  * Color
  */
+/* No files to import found in component/*\/style/*.* */
 /**
  * Default text
  */
-/* line 5, element/text/_text.scss */
+/* line 5, ../element/text/style/_text.scss */
 html {
   font-family: "Arial";
   line-height: 1.2;
@@ -13,7 +14,7 @@ html {
 /**
  * Heading
  */
-/* line 16, element/text/_text.scss */
+/* line 16, ../element/text/style/_text.scss */
 .h1,
 .wysiwyg h1 {
   font-size: 2rem;
@@ -21,7 +22,7 @@ html {
   margin-top: 1rem;
 }
 
-/* line 21, element/text/_text.scss */
+/* line 21, ../element/text/style/_text.scss */
 .h2,
 .wysiwyg h2 {
   font-size: 1.5rem;
@@ -29,7 +30,7 @@ html {
   margin-top: 1rem;
 }
 
-/* line 26, element/text/_text.scss */
+/* line 26, ../element/text/style/_text.scss */
 .h3,
 .wysiwyg h3 {
   font-size: 1.25rem;
@@ -37,7 +38,7 @@ html {
   margin-top: 1rem;
 }
 
-/* line 31, element/text/_text.scss */
+/* line 31, ../element/text/style/_text.scss */
 .h4,
 .wysiwyg h4 {
   margin-bottom: 1rem;
@@ -47,7 +48,7 @@ html {
 /**
  * Paragrapgh
  */
-/* line 41, element/text/_text.scss */
+/* line 41, ../element/text/style/_text.scss */
 .p,
 .wysiwyg p {
   margin-bottom: 1rem;
@@ -57,7 +58,7 @@ html {
 /**
  * Other
  */
-/* line 51, element/text/_text.scss */
+/* line 51, ../element/text/style/_text.scss */
 .hr,
 .wysiwyg hr {
   background-color: #555555;

@@ -1,7 +1,3 @@
-@mixin font-size($fontSize) {
-	font-size: ($fontSize / 16) + rem;
-}
-
 @mixin text-block($fontSize: "", $lineHeight: "") {
 	@if $fontSize != "" {
 		font-size: ($fontSize / 16) + rem;
@@ -13,9 +9,4 @@
 	
 	margin-bottom: 1rem;
 	margin-top: 1rem;
-}
-
-@mixin px-rem($property, $value) {
-	#{ $property }: $value + px;
-	#{ $property }: ($value / 16) + rem;
 }
