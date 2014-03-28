@@ -3,21 +3,21 @@ module.exports = function (grunt) {
         pkg: grunt.file.readJSON('package.json'),
 
         compass: {
-            dist: {
+            dev: {
                 options: {
                     sassDir: 'source',
-                    cssDir: 'source',
+                    cssDir: 'source/static',
                     config: 'config.rb'
                 }
             }
         },
 
         watch: {
-            style: {
-                files: ['source/**/*.scss'],
-                tasks: ['compass:dist'],
+            sass: {
+                files: ['source/main.scss', 'source/**/style/*.scss'],
+                tasks: ['compass:dev'],
                 options: {
-                    livereload: true               
+                    livereload: true
                 }
             }
         },
@@ -29,7 +29,7 @@ module.exports = function (grunt) {
                     port: 8000
                 }
             }
-        }        
+        }
     });
 
     grunt.loadNpmTasks('grunt-contrib-compass');

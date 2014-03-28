@@ -1,12 +1,3 @@
- html {
- 	color: navy;
- 	background-color: ghostWhite; 
- }
-
- p {
- 	color: black;
- }
-
- a {
- 	color: maroon;
- }
+@import "global/*.*";
+@import "component/*/style/*.*";
+@import "element/*/style/*.*";

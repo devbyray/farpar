@@ -1,0 +1,12 @@
+@mixin text-block($fontSize: "", $lineHeight: "") {
+	@if $fontSize != "" {
+		font-size: ($fontSize / 16) + rem;
+	}	
+	
+	@if $lineHeight != "" {
+		line-height: $lineHeight;
+	}
+	
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+}
