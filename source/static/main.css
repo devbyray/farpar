@@ -9,6 +9,33 @@
  */
 /* No files to import found in component/*\/style/*.* */
 /**
+ * Button
+ */
+/* line 5, ../element/button/style/_button.scss */
+.button, .button_green {
+  background-color: #888888;
+  border: none;
+  color: white;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+/* line 13, ../element/button/style/_button.scss */
+.button:hover, .button_green:hover {
+  background-color: #a2a2a2;
+}
+
+/* line 18, ../element/button/style/_button.scss */
+.button_green {
+  background-color: olivedrab;
+}
+/* line 21, ../element/button/style/_button.scss */
+.button_green:hover {
+  background-color: #8ab72d;
+}
+
+/**
  * List
  */
 /* line 6, ../element/list/style/_list.scss */

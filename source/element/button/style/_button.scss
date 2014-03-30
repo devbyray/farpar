@@ -1,0 +1,24 @@
+/**
+ * Button
+ */
+
+.button {
+	background-color: $color-defaultBackground;
+	border: none;
+	color: $color-defaultForeground;
+	display: inline-block;
+	font-size: 1rem;
+	padding: 0.5rem 1rem;
+	text-decoration: none;
+	&:hover {
+		background-color: lighten($color-defaultBackground, 10%);
+	}
+}
+
+.button_green {
+	@extend .button;
+	background-color: $color-green;
+	&:hover {
+		background-color: lighten($color-green, 10%);
+	}	
+}
