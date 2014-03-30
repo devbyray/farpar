@@ -25,7 +25,7 @@ html {
 .h3,
 .wysiwyg h3 {
 	@include text-block(20);
-	color: $darkGrey;
+	color: $color-darkGrey;
 }
 
 .h4,
@@ -50,7 +50,7 @@ html {
 
 .hr,
 .wysiwyg hr {
-	background-color: $darkGrey;
+	background-color: $color-darkGrey;
 	border: none;
 	height: 1px;
 	margin-bottom: 2rem;
