@@ -1,0 +1,28 @@
+/**
+ * List
+ */
+
+.ul,
+.wysiwyg ul {
+	@include px-rem(padding-left, 40);
+	@include text-block();
+}
+
+.ol,
+.wysiwyg ol {
+	@include px-rem(padding-left, 40);
+	@include text-block();
+}
+
+.dl,
+.wysiwyg dl {
+	@include text-block();
+	
+	dt {
+		font-weight: bold;
+	}
+
+	dd {
+		@include px-rem(margin-left, 40);
+	}
+}
