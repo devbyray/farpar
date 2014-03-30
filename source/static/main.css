@@ -1,7 +1,49 @@
 /**
+ * Text
+ */
+/**
+ * Convertor
+ */
+/**
  * Color
  */
 /* No files to import found in component/*\/style/*.* */
+/**
+ * List
+ */
+/* line 6, ../element/list/style/_list.scss */
+.ul,
+.wysiwyg ul {
+  padding-left: 2.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+/* line 12, ../element/list/style/_list.scss */
+.ol,
+.wysiwyg ol {
+  padding-left: 2.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+/* line 18, ../element/list/style/_list.scss */
+.dl,
+.wysiwyg dl {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+/* line 21, ../element/list/style/_list.scss */
+.dl dt,
+.wysiwyg dl dt {
+  font-weight: bold;
+}
+/* line 25, ../element/list/style/_list.scss */
+.dl dd,
+.wysiwyg dl dd {
+  margin-left: 2.5rem;
+}
+
 /**
  * Default text
  */
@@ -36,9 +78,10 @@ html {
   font-size: 1.25rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
+  color: #555555;
 }
 
-/* line 31, ../element/text/style/_text.scss */
+/* line 32, ../element/text/style/_text.scss */
 .h4,
 .wysiwyg h4 {
   margin-bottom: 1rem;
@@ -48,7 +91,7 @@ html {
 /**
  * Paragrapgh
  */
-/* line 41, ../element/text/style/_text.scss */
+/* line 42, ../element/text/style/_text.scss */
 .p,
 .wysiwyg p {
   margin-bottom: 1rem;
@@ -58,7 +101,7 @@ html {
 /**
  * Other
  */
-/* line 51, ../element/text/style/_text.scss */
+/* line 52, ../element/text/style/_text.scss */
 .hr,
 .wysiwyg hr {
   background-color: #555555;

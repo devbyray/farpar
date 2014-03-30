@@ -25,6 +25,7 @@ html {
 .h3,
 .wysiwyg h3 {
 	@include text-block(20);
+	color: $darkGrey;
 }
 
 .h4,
