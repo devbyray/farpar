@@ -14,7 +14,7 @@ module.exports = function (grunt) {
 
         watch: {
             sass: {
-                files: ['source/main.scss', 'source/**/style/*.scss'],
+                files: ['source/main.scss', 'source/global/*.scss', 'source/**/style/*.scss'],
                 tasks: ['compass:dev'],
                 options: {
                     livereload: true

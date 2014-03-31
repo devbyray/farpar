@@ -1,0 +1,146 @@
+/**
+ * Variable
+ */
+
+$grid-gutter: 0.5rem;
+
+
+/**
+ * Grid
+ */
+
+.grid {
+	margin-left: -$grid-gutter;
+	overflow: hidden;
+
+	.cell {
+		float: left;
+		margin-left: $grid-gutter;
+	}
+
+	.demo {
+		@include font-size(12);
+		color: #fff;
+		line-height: 2;
+		margin-bottom: $grid-gutter;
+		text-align: center;
+	}
+
+	.demo_a {
+		@extend .demo;
+		background-color: $color-purple;
+	}
+
+	.demo_b {
+		@extend .demo;
+		background-color: $color-teal;
+	}
+}
+
+.grid_12 {
+	@extend .grid;
+
+	.cell_1 {
+		@extend .cell;
+		width: calc(100% / 12 - #{ $grid-gutter });
+	}
+
+	.cell_2 {
+		@extend .cell;
+		width: calc(100% / 12 * 2 - #{ $grid-gutter });
+	}
+
+	.cell_3 {
+		@extend .cell;
+		width: calc(100% / 12 * 3 - #{ $grid-gutter });
+	}
+
+	.cell_4 {
+		@extend .cell;
+		width: calc(100% / 12 * 4 - #{ $grid-gutter });
+	}
+
+	.cell_5 {
+		@extend .cell;
+		width: calc(100% / 12 * 5 - #{ $grid-gutter });
+	}
+
+	.cell_6 {
+		@extend .cell;
+		width: calc(100% / 12 * 6 - #{ $grid-gutter });
+	}
+
+	.cell_7 {
+		@extend .cell;
+		width: calc(100% / 12 * 7 - #{ $grid-gutter });
+	}
+
+	.cell_8 {
+		@extend .cell;
+		width: calc(100% / 12 * 8 - #{ $grid-gutter });
+	}
+
+	.cell_9 {
+		@extend .cell;
+		width: calc(100% / 12 * 9 - #{ $grid-gutter });
+	}
+
+	.cell_10 {
+		@extend .cell;
+		width: calc(100% / 12 * 10 - #{ $grid-gutter });
+	}
+
+	.cell_11 {
+		@extend .cell;
+		width: calc(100% / 12 * 11 - #{ $grid-gutter });
+	}
+
+	.cell_12 {
+		@extend .cell;
+		width: calc(100% - #{ $grid-gutter });
+	}
+
+	.skip_1 {
+		margin-left: calc(100% / 12 + #{ $grid-gutter });
+	}
+
+	.skip_2 {
+		margin-left: calc(100% / 12 * 2 + #{ $grid-gutter });
+	}
+
+	.skip_3 {
+		margin-left: calc(100% / 12 * 3 + #{ $grid-gutter });
+	}
+
+	.skip_4 {
+		margin-left: calc(100% / 12 * 4 + #{ $grid-gutter });
+	}
+
+	.skip_5 {
+		margin-left: calc(100% / 12 * 5 + #{ $grid-gutter });
+	}
+
+	.skip_6 {
+		margin-left: calc(100% / 12 * 6 + #{ $grid-gutter });
+	}
+
+	.skip_7 {
+		margin-left: calc(100% / 12 * 7 + #{ $grid-gutter });
+	}
+
+	.skip_8 {
+		margin-left: calc(100% / 12 * 8 + #{ $grid-gutter });
+	}
+
+	.skip_9 {
+		margin-left: calc(100% / 12 * 9 + #{ $grid-gutter });
+	}
+
+	.skip_10 {
+		margin-left: calc(100% / 12 * 10 + #{ $grid-gutter });
+	}
+
+	.skip_11 {
+		margin-left: calc(100% / 12 * 11 + #{ $grid-gutter });
+	}
+}
