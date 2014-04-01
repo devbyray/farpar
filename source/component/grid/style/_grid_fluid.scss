@@ -9,11 +9,6 @@
 	margin-left: -$grid-gutter;
 	overflow: hidden;
 
-	.cell {
-		float: left;
-		margin-left: $grid-gutter;
-	}
-
 	.demo {
 		@include font-size(12);
 		color: #fff;
@@ -32,158 +27,208 @@
 		background-color: $color-teal;
 	}
 
-	.cell_1 {
-		@extend .cell;
+	// 12 columns system
+	.width {
+		float: left;
+		margin-left: $grid-gutter;
+	}
+
+	.width_1_12 {
+		@extend .width;
 		width: calc(100% / 12 - #{ $grid-gutter });
 	}
 
-	.cell_2 {
-		@extend .cell;
+	.width_2_12,
+	.width_1_6 {
+		@extend .width;
 		width: calc(100% / 12 * 2 - #{ $grid-gutter });
 	}
 
-	.cell_3 {
-		@extend .cell;
+	.width_3_12,
+	.width_1_4 {
+		@extend .width;
 		width: calc(100% / 12 * 3 - #{ $grid-gutter });
 	}
 
-	.cell_4 {
-		@extend .cell;
+	.width_4_12,
+	.width_2_6,
+	.width_1_3 {
+		@extend .width;
 		width: calc(100% / 12 * 4 - #{ $grid-gutter });
 	}
 
-	.cell_5 {
-		@extend .cell;
+	.width_5_12 {
+		@extend .width;
 		width: calc(100% / 12 * 5 - #{ $grid-gutter });
 	}
 
-	.cell_6 {
-		@extend .cell;
+	.width_6_12,
+	.width_3_6,
+	.width_2_4,
+	.width_1_2 {
+		@extend .width;
 		width: calc(100% / 12 * 6 - #{ $grid-gutter });
 	}
 
-	.cell_7 {
-		@extend .cell;
+	.width_7_12 {
+		@extend .width;
 		width: calc(100% / 12 * 7 - #{ $grid-gutter });
 	}
 
-	.cell_8 {
-		@extend .cell;
+	.width_8_12,
+	.width_4_6,
+	.width_2_3 {
+		@extend .width;
 		width: calc(100% / 12 * 8 - #{ $grid-gutter });
 	}
 
-	.cell_9 {
-		@extend .cell;
+	.width_9_12,
+	.width_3_4 {
+		@extend .width;
 		width: calc(100% / 12 * 9 - #{ $grid-gutter });
 	}
 
-	.cell_10 {
-		@extend .cell;
+	.width_10_12,
+	.width_5_6 {
+		@extend .width;
 		width: calc(100% / 12 * 10 - #{ $grid-gutter });
 	}
 
-	.cell_11 {
-		@extend .cell;
+	.width_11_12 {
+		@extend .width;
 		width: calc(100% / 12 * 11 - #{ $grid-gutter });
 	}
 
-	.cell_12 {
-		@extend .cell;
+	.width_12_12,
+	.width_6_6,
+	.width_4_4,
+	.width_3_3,
+	.width_2_2,
+	.width_1_1 {
+		@extend .width;
 		width: calc(100% - #{ $grid-gutter });
 	}
 
-	.skip_1 {
+	// Skip columns
+	.skip_1_12 {
 		margin-left: calc(100% / 12 + #{ $grid-gutter });
 	}
 
-	.skip_2 {
+	.skip_2_12,
+	.skip_1_6 {
 		margin-left: calc(100% / 12 * 2 + #{ $grid-gutter });
 	}
 
-	.skip_3 {
+	.skip_3_12,
+	.skip_1_4 {
 		margin-left: calc(100% / 12 * 3 + #{ $grid-gutter });
 	}
 
-	.skip_4 {
+	.skip_4_12,
+	.skip_2_6,
+	.skip_1_3 {
 		margin-left: calc(100% / 12 * 4 + #{ $grid-gutter });
 	}
 
-	.skip_5 {
+	.skip_5_12 {
 		margin-left: calc(100% / 12 * 5 + #{ $grid-gutter });
 	}
 
-	.skip_6 {
+	.skip_6_12,
+	.skip_3_6,
+	.skip_2_4,
+	.skip_1_2 {
 		margin-left: calc(100% / 12 * 6 + #{ $grid-gutter });
 	}
 
-	.skip_7 {
+	.skip_7_12 {
 		margin-left: calc(100% / 12 * 7 + #{ $grid-gutter });
 	}
 
-	.skip_8 {
+	.skip_8_12,
+	.skip_4_6,
+	.skip_2_3 {
 		margin-left: calc(100% / 12 * 8 + #{ $grid-gutter });
 	}
 
-	.skip_9 {
+	.skip_9_12,
+	.skip_3_4 {
 		margin-left: calc(100% / 12 * 9 + #{ $grid-gutter });
 	}
 
-	.skip_10 {
+	.skip_10_12,
+	.skip_5_6 {
 		margin-left: calc(100% / 12 * 10 + #{ $grid-gutter });
 	}
 
-	.skip_11 {
+	.skip_12_12,
+	.skip_6_6,
+	.skip_4_4,
+	.skip_3_3,
+	.skip_2_2,
+	.skip_1_1 {
 		margin-left: calc(100% / 12 * 11 + #{ $grid-gutter });
 	}
 
 	&.grid_rtl {
-		.cell {
+		.width {
 			float: right;
 		}
 
-		.skip_1 {
+		.skip_1_12 {
 			margin-left: 0;
 			margin-right: calc(100% / 12);
 		}
 
-		.skip_2 {
+		.skip_2_12,
+		.skip_1_6 {
 			margin-left: 0;
 			margin-right: calc(100% / 12 * 2);
 		}
 
-		.skip_3 {
+		.skip_3_12,
+		.skip_1_4 {
 			margin-right: calc(100% / 12 * 3);
 		}
 
-		.skip_4 {
+		.skip_4_12,
+		.skip_2_6,
+		.skip_1_3 {
 			margin-right: calc(100% / 12 * 4);
 		}
 
-		.skip_5 {
+		.skip_5_12 {
 			margin-right: calc(100% / 12 * 5);
 		}
 
-		.skip_6 {
+		.skip_6_12,
+		.skip_3_6,
+		.skip_2_4,
+		.skip_1_2 {
 			margin-right: calc(100% / 12 * 6);
 		}
 
-		.skip_7 {
+		.skip_7_12 {
 			margin-right: calc(100% / 12 * 7);
 		}
 
-		.skip_8 {
+		.skip_8_12,
+		.skip_4_6,
+		.skip_2_3 {
 			margin-right: calc(100% / 12 * 8);
 		}
 
-		.skip_9 {
+		.skip_9_12,
+		.skip_3_4 {
 			margin-right: calc(100% / 12 * 9);
 		}
 
-		.skip_10 {
+		.skip_10_12,
+		.skip_5_6 {
 			margin-right: calc(100% / 12 * 10);
 		}
 
-		.skip_11 {
+		.skip_11_12 {
 			margin-right: calc(100% / 12 * 11);
 		}
 	}
