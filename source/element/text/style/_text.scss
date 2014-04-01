@@ -1,12 +1,12 @@
 /**
- * Default text
+ * HTML
  */
 
 html {
 	font-family: "Arial";
 	line-height: 1.2;
+	-webkit-text-size-adjust: none;
 }
-
 
 /**
  * Heading
@@ -41,6 +41,16 @@ html {
 .p,
 .wysiwyg p {
 	@include text-block();
+}
+
+.p_large {
+	@extend .p;
+	@include font-size(24);
+}
+
+.p_italic {
+	@extend .p;
+	font-style: italic;
 }
 
 
