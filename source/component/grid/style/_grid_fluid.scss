@@ -1,15 +1,11 @@
 /**
- * Variable
+ * Grid fluid
  */
 
-$grid-gutter: 0.5rem;
+.grid_fluid {
+	// Variable
+	$grid-gutter: 0.5rem;
 
-
-/**
- * Grid
- */
-
-.grid {
 	margin-left: -$grid-gutter;
 	overflow: hidden;
 
@@ -35,10 +31,6 @@ $grid-gutter: 0.5rem;
 		@extend .demo;
 		background-color: $color-teal;
 	}
-}
-
-.grid_12 {
-	@extend .grid;
 
 	.cell_1 {
 		@extend .cell;
@@ -142,5 +134,57 @@ $grid-gutter: 0.5rem;
 
 	.skip_11 {
 		margin-left: calc(100% / 12 * 11 + #{ $grid-gutter });
+	}
+
+	&.grid_rtl {
+		.cell {
+			float: right;
+		}
+
+		.skip_1 {
+			margin-left: 0;
+			margin-right: calc(100% / 12);
+		}
+
+		.skip_2 {
+			margin-left: 0;
+			margin-right: calc(100% / 12 * 2);
+		}
+
+		.skip_3 {
+			margin-right: calc(100% / 12 * 3);
+		}
+
+		.skip_4 {
+			margin-right: calc(100% / 12 * 4);
+		}
+
+		.skip_5 {
+			margin-right: calc(100% / 12 * 5);
+		}
+
+		.skip_6 {
+			margin-right: calc(100% / 12 * 6);
+		}
+
+		.skip_7 {
+			margin-right: calc(100% / 12 * 7);
+		}
+
+		.skip_8 {
+			margin-right: calc(100% / 12 * 8);
+		}
+
+		.skip_9 {
+			margin-right: calc(100% / 12 * 9);
+		}
+
+		.skip_10 {
+			margin-right: calc(100% / 12 * 10);
+		}
+
+		.skip_11 {
+			margin-right: calc(100% / 12 * 11);
+		}
 	}
 }
