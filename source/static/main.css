@@ -273,16 +273,31 @@ body {
 }
 
 /**
- * Variable
- */
-/**
  * Section
  */
-/* line 12, ../component/section/style/_section.scss */
+/* line 5, ../component/section/style/_section.scss */
 .section {
-  margin: 2rem;
+  margin: 1.5rem;
 }
 
+@media only screen and (max-width: 480px) {
+  /* line 11, ../component/section/style/_section.scss */
+  .section {
+    margin: 0.5rem;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  /* line 18, ../component/section/style/_section.scss */
+  .section {
+    margin: 1rem;
+  }
+}
+@media only screen and (min-width: 1441px) {
+  /* line 25, ../component/section/style/_section.scss */
+  .section {
+    margin: 2rem;
+  }
+}
 /**
  * Button
  */
@@ -356,10 +371,28 @@ html {
   -webkit-text-size-adjust: none;
 }
 
+@media only screen and (max-width: 480px) {
+  /* line 13, ../element/text/style/_text.scss */
+  html {
+    font-size: 80%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  /* line 20, ../element/text/style/_text.scss */
+  html {
+    font-size: 90%;
+  }
+}
+@media only screen and (min-width: 1441px) {
+  /* line 27, ../element/text/style/_text.scss */
+  html {
+    font-size: 120%;
+  }
+}
 /**
  * Heading
  */
-/* line 16, ../element/text/style/_text.scss */
+/* line 38, ../element/text/style/_text.scss */
 .h1,
 .wysiwyg h1 {
   font-size: 2rem;
@@ -367,7 +400,7 @@ html {
   margin-top: 1rem;
 }
 
-/* line 21, ../element/text/style/_text.scss */
+/* line 43, ../element/text/style/_text.scss */
 .h2,
 .wysiwyg h2 {
   font-size: 1.5rem;
@@ -375,7 +408,7 @@ html {
   margin-top: 1rem;
 }
 
-/* line 26, ../element/text/style/_text.scss */
+/* line 48, ../element/text/style/_text.scss */
 .h3,
 .wysiwyg h3 {
   font-size: 1.25rem;
@@ -384,7 +417,7 @@ html {
   color: #555555;
 }
 
-/* line 32, ../element/text/style/_text.scss */
+/* line 54, ../element/text/style/_text.scss */
 .h4,
 .wysiwyg h4 {
   margin-bottom: 1rem;
@@ -394,19 +427,19 @@ html {
 /**
  * Paragrapgh
  */
-/* line 42, ../element/text/style/_text.scss */
+/* line 64, ../element/text/style/_text.scss */
 .p, .p_large, .p_italic,
 .wysiwyg p {
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
 
-/* line 46, ../element/text/style/_text.scss */
+/* line 68, ../element/text/style/_text.scss */
 .p_large {
   font-size: 1.5rem;
 }
 
-/* line 51, ../element/text/style/_text.scss */
+/* line 73, ../element/text/style/_text.scss */
 .p_italic {
   font-style: italic;
 }
@@ -414,7 +447,7 @@ html {
 /**
  * Other
  */
-/* line 62, ../element/text/style/_text.scss */
+/* line 84, ../element/text/style/_text.scss */
 .hr,
 .wysiwyg hr {
   background-color: #555555;

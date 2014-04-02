@@ -1,14 +1,28 @@
 /**
- * Variable
- */
-
- $section-gutter: 2rem;
-
-
-/**
  * Section
  */
 
 .section {
-	margin: $section-gutter;
+	margin: 1.5rem;
+}
+
+// Smaller screen
+@media only screen and (max-width: 480px) {
+	.section {
+		margin: 0.5rem;
+	}
+}
+
+// Small screen
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+	.section {
+		margin: 1rem;
+	}
+}
+
+// large screen
+@media only screen and (min-width: 1441px) {
+	.section {
+		margin: 2rem;
+	}
 }
