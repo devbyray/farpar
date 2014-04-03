@@ -2,7 +2,7 @@
  * Grid fluid
  */
 
-.grid_fluid {
+.grid-fluid {
 	// Variable
 	$grid-gutter: 0.5rem;
 
@@ -17,12 +17,12 @@
 		text-align: center;
 	}
 
-	.demo_a {
+	.demo-a {
 		@extend .demo;
 		background-color: $color-purple;
 	}
 
-	.demo_b {
+	.demo-b {
 		@extend .demo;
 		background-color: $color-teal;
 	}
@@ -33,203 +33,214 @@
 		margin-left: $grid-gutter;
 	}
 
-	.width_1_12 {
+	.width-1-12 {
 		@extend .width;
 		width: calc(100% / 12 - #{ $grid-gutter });
 	}
 
-	.width_2_12,
-	.width_1_6 {
+	.width-2-12,
+	.width-1-6 {
 		@extend .width;
 		width: calc(100% / 12 * 2 - #{ $grid-gutter });
 	}
 
-	.width_3_12,
-	.width_1_4 {
+	.width-3-12,
+	.width-1-4 {
 		@extend .width;
 		width: calc(100% / 12 * 3 - #{ $grid-gutter });
 	}
 
-	.width_4_12,
-	.width_2_6,
-	.width_1_3 {
+	.width-4-12,
+	.width-2-6,
+	.width-1-3 {
 		@extend .width;
 		width: calc(100% / 12 * 4 - #{ $grid-gutter });
 	}
 
-	.width_5_12 {
+	.width-5-12 {
 		@extend .width;
 		width: calc(100% / 12 * 5 - #{ $grid-gutter });
 	}
 
-	.width_6_12,
-	.width_3_6,
-	.width_2_4,
-	.width_1_2 {
+	.width-6-12,
+	.width-3-6,
+	.width-2-4,
+	.width-1-2 {
 		@extend .width;
 		width: calc(100% / 12 * 6 - #{ $grid-gutter });
 	}
 
-	.width_7_12 {
+	.width-7-12 {
 		@extend .width;
 		width: calc(100% / 12 * 7 - #{ $grid-gutter });
 	}
 
-	.width_8_12,
-	.width_4_6,
-	.width_2_3 {
+	.width-8-12,
+	.width-4-6,
+	.width-2-3 {
 		@extend .width;
 		width: calc(100% / 12 * 8 - #{ $grid-gutter });
 	}
 
-	.width_9_12,
-	.width_3_4 {
+	.width-9-12,
+	.width-3-4 {
 		@extend .width;
 		width: calc(100% / 12 * 9 - #{ $grid-gutter });
 	}
 
-	.width_10_12,
-	.width_5_6 {
+	.width-10-12,
+	.width-5-6 {
 		@extend .width;
 		width: calc(100% / 12 * 10 - #{ $grid-gutter });
 	}
 
-	.width_11_12 {
+	.width-11-12 {
 		@extend .width;
 		width: calc(100% / 12 * 11 - #{ $grid-gutter });
 	}
 
-	.width_12_12,
-	.width_6_6,
-	.width_4_4,
-	.width_3_3,
-	.width_2_2,
-	.width_1_1 {
+	.width-12-12,
+	.width-6-6,
+	.width-4-4,
+	.width-3-3,
+	.width-2-2,
+	.width-1-1 {
 		@extend .width;
 		width: calc(100% - #{ $grid-gutter });
 	}
 
 	// Skip columns
-	.skip_1_12 {
+	.skip-1-12 {
 		margin-left: calc(100% / 12 + #{ $grid-gutter });
 	}
 
-	.skip_2_12,
-	.skip_1_6 {
+	.skip-2-12,
+	.skip-1-6 {
 		margin-left: calc(100% / 12 * 2 + #{ $grid-gutter });
 	}
 
-	.skip_3_12,
-	.skip_1_4 {
+	.skip-3-12,
+	.skip-1-4 {
 		margin-left: calc(100% / 12 * 3 + #{ $grid-gutter });
 	}
 
-	.skip_4_12,
-	.skip_2_6,
-	.skip_1_3 {
+	.skip-4-12,
+	.skip-2-6,
+	.skip-1-3 {
 		margin-left: calc(100% / 12 * 4 + #{ $grid-gutter });
 	}
 
-	.skip_5_12 {
+	.skip-5-12 {
 		margin-left: calc(100% / 12 * 5 + #{ $grid-gutter });
 	}
 
-	.skip_6_12,
-	.skip_3_6,
-	.skip_2_4,
-	.skip_1_2 {
+	.skip-6-12,
+	.skip-3-6,
+	.skip-2-4,
+	.skip-1-2 {
 		margin-left: calc(100% / 12 * 6 + #{ $grid-gutter });
 	}
 
-	.skip_7_12 {
+	.skip-7-12 {
 		margin-left: calc(100% / 12 * 7 + #{ $grid-gutter });
 	}
 
-	.skip_8_12,
-	.skip_4_6,
-	.skip_2_3 {
+	.skip-8-12,
+	.skip-4-6,
+	.skip-2-3 {
 		margin-left: calc(100% / 12 * 8 + #{ $grid-gutter });
 	}
 
-	.skip_9_12,
-	.skip_3_4 {
+	.skip-9-12,
+	.skip-3-4 {
 		margin-left: calc(100% / 12 * 9 + #{ $grid-gutter });
 	}
 
-	.skip_10_12,
-	.skip_5_6 {
+	.skip-10-12,
+	.skip-5-6 {
 		margin-left: calc(100% / 12 * 10 + #{ $grid-gutter });
 	}
 
-	.skip_12_12,
-	.skip_6_6,
-	.skip_4_4,
-	.skip_3_3,
-	.skip_2_2,
-	.skip_1_1 {
+	.skip-12-12,
+	.skip-6-6,
+	.skip-4-4,
+	.skip-3-3,
+	.skip-2-2,
+	.skip-1-1 {
 		margin-left: calc(100% / 12 * 11 + #{ $grid-gutter });
 	}
 
-	&.grid_rtl {
+	&.grid-rtl {
 		.width {
 			float: right;
 		}
 
-		.skip_1_12 {
+		.skip-1-12 {
 			margin-left: 0;
 			margin-right: calc(100% / 12);
 		}
 
-		.skip_2_12,
-		.skip_1_6 {
+		.skip-2-12,
+		.skip-1-6 {
 			margin-left: 0;
 			margin-right: calc(100% / 12 * 2);
 		}
 
-		.skip_3_12,
-		.skip_1_4 {
+		.skip-3-12,
+		.skip-1-4 {
 			margin-right: calc(100% / 12 * 3);
 		}
 
-		.skip_4_12,
-		.skip_2_6,
-		.skip_1_3 {
+		.skip-4-12,
+		.skip-2-6,
+		.skip-1-3 {
 			margin-right: calc(100% / 12 * 4);
 		}
 
-		.skip_5_12 {
+		.skip-5-12 {
 			margin-right: calc(100% / 12 * 5);
 		}
 
-		.skip_6_12,
-		.skip_3_6,
-		.skip_2_4,
-		.skip_1_2 {
+		.skip-6-12,
+		.skip-3-6,
+		.skip-2-4,
+		.skip-1-2 {
 			margin-right: calc(100% / 12 * 6);
 		}
 
-		.skip_7_12 {
+		.skip-7-12 {
 			margin-right: calc(100% / 12 * 7);
 		}
 
-		.skip_8_12,
-		.skip_4_6,
-		.skip_2_3 {
+		.skip-8-12,
+		.skip-4-6,
+		.skip-2-3 {
 			margin-right: calc(100% / 12 * 8);
 		}
 
-		.skip_9_12,
-		.skip_3_4 {
+		.skip-9-12,
+		.skip-3-4 {
 			margin-right: calc(100% / 12 * 9);
 		}
 
-		.skip_10_12,
-		.skip_5_6 {
+		.skip-10-12,
+		.skip-5-6 {
 			margin-right: calc(100% / 12 * 10);
 		}
 
-		.skip_11_12 {
+		.skip-11-12 {
 			margin-right: calc(100% / 12 * 11);
+		}
+	}
+
+	// Smaller screen
+	@media only screen and (max-width: 480px) {
+		.mobile-width-1-1 {
+			width: 100%;
+		}
+
+		.mobile-hidden {
+			display: none;
 		}
 	}
 }
