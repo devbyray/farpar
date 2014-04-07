@@ -20,26 +20,35 @@ body {
  */
 /* line 5, ../component/grid/style/_grid_fluid.scss */
 .grid-fluid {
-  margin-left: -0.5rem;
+  margin-left: -1.25rem;
   overflow: hidden;
 }
-/* line 12, ../component/grid/style/_grid_fluid.scss */
+/* line 11, ../component/grid/style/_grid_fluid.scss */
+.grid-fluid.grid-padding {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+/* line 17, ../component/grid/style/_grid_fluid.scss */
 .grid-fluid .demo, .grid-fluid .demo-a, .grid-fluid .demo-b {
   font-size: 0.75rem;
   color: #fff;
   line-height: 2;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.25rem;
   text-align: center;
 }
-/* line 20, ../component/grid/style/_grid_fluid.scss */
+/* line 24, ../component/grid/style/_grid_fluid.scss */
+.grid-fluid .demo:last-child, .grid-fluid .demo-a:last-child, .grid-fluid .demo-b:last-child {
+  margin-bottom: 0;
+}
+/* line 29, ../component/grid/style/_grid_fluid.scss */
 .grid-fluid .demo-a {
   background-color: mediumpurple;
 }
-/* line 25, ../component/grid/style/_grid_fluid.scss */
+/* line 34, ../component/grid/style/_grid_fluid.scss */
 .grid-fluid .demo-b {
   background-color: teal;
 }
-/* line 31, ../component/grid/style/_grid_fluid.scss */
+/* line 41, ../component/grid/style/_grid_fluid.scss */
 .grid-fluid .width, .grid-fluid .width-1-12, .grid-fluid .width-2-12,
 .grid-fluid .width-1-6, .grid-fluid .width-3-12,
 .grid-fluid .width-1-4, .grid-fluid .width-4-12,
@@ -58,133 +67,133 @@ body {
 .grid-fluid .width-2-2,
 .grid-fluid .width-1-1 {
   float: left;
-  margin-left: 0.5rem;
+  margin-left: 1.25rem;
 }
-/* line 36, ../component/grid/style/_grid_fluid.scss */
+/* line 46, ../component/grid/style/_grid_fluid.scss */
 .grid-fluid .width-1-12 {
-  width: calc(100% / 12 - 0.5rem);
+  width: calc(100% / 12 - 1.25rem);
 }
-/* line 42, ../component/grid/style/_grid_fluid.scss */
+/* line 52, ../component/grid/style/_grid_fluid.scss */
 .grid-fluid .width-2-12,
 .grid-fluid .width-1-6 {
-  width: calc(100% / 12 * 2 - 0.5rem);
+  width: calc(100% / 12 * 2 - 1.25rem);
 }
-/* line 48, ../component/grid/style/_grid_fluid.scss */
+/* line 58, ../component/grid/style/_grid_fluid.scss */
 .grid-fluid .width-3-12,
 .grid-fluid .width-1-4 {
-  width: calc(100% / 12 * 3 - 0.5rem);
+  width: calc(100% / 12 * 3 - 1.25rem);
 }
-/* line 55, ../component/grid/style/_grid_fluid.scss */
+/* line 65, ../component/grid/style/_grid_fluid.scss */
 .grid-fluid .width-4-12,
 .grid-fluid .width-2-6,
 .grid-fluid .width-1-3 {
-  width: calc(100% / 12 * 4 - 0.5rem);
+  width: calc(100% / 12 * 4 - 1.25rem);
 }
-/* line 60, ../component/grid/style/_grid_fluid.scss */
+/* line 70, ../component/grid/style/_grid_fluid.scss */
 .grid-fluid .width-5-12 {
-  width: calc(100% / 12 * 5 - 0.5rem);
+  width: calc(100% / 12 * 5 - 1.25rem);
 }
-/* line 68, ../component/grid/style/_grid_fluid.scss */
+/* line 78, ../component/grid/style/_grid_fluid.scss */
 .grid-fluid .width-6-12,
 .grid-fluid .width-3-6,
 .grid-fluid .width-2-4,
 .grid-fluid .width-1-2 {
-  width: calc(100% / 12 * 6 - 0.5rem);
+  width: calc(100% / 12 * 6 - 1.25rem);
 }
-/* line 73, ../component/grid/style/_grid_fluid.scss */
+/* line 83, ../component/grid/style/_grid_fluid.scss */
 .grid-fluid .width-7-12 {
-  width: calc(100% / 12 * 7 - 0.5rem);
+  width: calc(100% / 12 * 7 - 1.25rem);
 }
-/* line 80, ../component/grid/style/_grid_fluid.scss */
+/* line 90, ../component/grid/style/_grid_fluid.scss */
 .grid-fluid .width-8-12,
 .grid-fluid .width-4-6,
 .grid-fluid .width-2-3 {
-  width: calc(100% / 12 * 8 - 0.5rem);
+  width: calc(100% / 12 * 8 - 1.25rem);
 }
-/* line 86, ../component/grid/style/_grid_fluid.scss */
+/* line 96, ../component/grid/style/_grid_fluid.scss */
 .grid-fluid .width-9-12,
 .grid-fluid .width-3-4 {
-  width: calc(100% / 12 * 9 - 0.5rem);
+  width: calc(100% / 12 * 9 - 1.25rem);
 }
-/* line 92, ../component/grid/style/_grid_fluid.scss */
+/* line 102, ../component/grid/style/_grid_fluid.scss */
 .grid-fluid .width-10-12,
 .grid-fluid .width-5-6 {
-  width: calc(100% / 12 * 10 - 0.5rem);
-}
-/* line 97, ../component/grid/style/_grid_fluid.scss */
-.grid-fluid .width-11-12 {
-  width: calc(100% / 12 * 11 - 0.5rem);
+  width: calc(100% / 12 * 10 - 1.25rem);
 }
 /* line 107, ../component/grid/style/_grid_fluid.scss */
+.grid-fluid .width-11-12 {
+  width: calc(100% / 12 * 11 - 1.25rem);
+}
+/* line 117, ../component/grid/style/_grid_fluid.scss */
 .grid-fluid .width-12-12,
 .grid-fluid .width-6-6,
 .grid-fluid .width-4-4,
 .grid-fluid .width-3-3,
 .grid-fluid .width-2-2,
 .grid-fluid .width-1-1 {
-  width: calc(100% - 0.5rem);
-}
-/* line 113, ../component/grid/style/_grid_fluid.scss */
-.grid-fluid .skip-1-12 {
-  margin-left: calc(100% / 12 + 0.5rem);
-}
-/* line 118, ../component/grid/style/_grid_fluid.scss */
-.grid-fluid .skip-2-12,
-.grid-fluid .skip-1-6 {
-  margin-left: calc(100% / 12 * 2 + 0.5rem);
+  width: calc(100% - 1.25rem);
 }
 /* line 123, ../component/grid/style/_grid_fluid.scss */
+.grid-fluid .skip-1-12 {
+  margin-left: calc(100% / 12 + 1.25rem);
+}
+/* line 128, ../component/grid/style/_grid_fluid.scss */
+.grid-fluid .skip-2-12,
+.grid-fluid .skip-1-6 {
+  margin-left: calc(100% / 12 * 2 + 1.25rem);
+}
+/* line 133, ../component/grid/style/_grid_fluid.scss */
 .grid-fluid .skip-3-12,
 .grid-fluid .skip-1-4 {
-  margin-left: calc(100% / 12 * 3 + 0.5rem);
+  margin-left: calc(100% / 12 * 3 + 1.25rem);
 }
-/* line 129, ../component/grid/style/_grid_fluid.scss */
+/* line 139, ../component/grid/style/_grid_fluid.scss */
 .grid-fluid .skip-4-12,
 .grid-fluid .skip-2-6,
 .grid-fluid .skip-1-3 {
-  margin-left: calc(100% / 12 * 4 + 0.5rem);
+  margin-left: calc(100% / 12 * 4 + 1.25rem);
 }
-/* line 133, ../component/grid/style/_grid_fluid.scss */
+/* line 143, ../component/grid/style/_grid_fluid.scss */
 .grid-fluid .skip-5-12 {
-  margin-left: calc(100% / 12 * 5 + 0.5rem);
+  margin-left: calc(100% / 12 * 5 + 1.25rem);
 }
-/* line 140, ../component/grid/style/_grid_fluid.scss */
+/* line 150, ../component/grid/style/_grid_fluid.scss */
 .grid-fluid .skip-6-12,
 .grid-fluid .skip-3-6,
 .grid-fluid .skip-2-4,
 .grid-fluid .skip-1-2 {
-  margin-left: calc(100% / 12 * 6 + 0.5rem);
+  margin-left: calc(100% / 12 * 6 + 1.25rem);
 }
-/* line 144, ../component/grid/style/_grid_fluid.scss */
+/* line 154, ../component/grid/style/_grid_fluid.scss */
 .grid-fluid .skip-7-12 {
-  margin-left: calc(100% / 12 * 7 + 0.5rem);
+  margin-left: calc(100% / 12 * 7 + 1.25rem);
 }
-/* line 150, ../component/grid/style/_grid_fluid.scss */
+/* line 160, ../component/grid/style/_grid_fluid.scss */
 .grid-fluid .skip-8-12,
 .grid-fluid .skip-4-6,
 .grid-fluid .skip-2-3 {
-  margin-left: calc(100% / 12 * 8 + 0.5rem);
+  margin-left: calc(100% / 12 * 8 + 1.25rem);
 }
-/* line 155, ../component/grid/style/_grid_fluid.scss */
+/* line 165, ../component/grid/style/_grid_fluid.scss */
 .grid-fluid .skip-9-12,
 .grid-fluid .skip-3-4 {
-  margin-left: calc(100% / 12 * 9 + 0.5rem);
+  margin-left: calc(100% / 12 * 9 + 1.25rem);
 }
-/* line 160, ../component/grid/style/_grid_fluid.scss */
+/* line 170, ../component/grid/style/_grid_fluid.scss */
 .grid-fluid .skip-10-12,
 .grid-fluid .skip-5-6 {
-  margin-left: calc(100% / 12 * 10 + 0.5rem);
+  margin-left: calc(100% / 12 * 10 + 1.25rem);
 }
-/* line 169, ../component/grid/style/_grid_fluid.scss */
+/* line 179, ../component/grid/style/_grid_fluid.scss */
 .grid-fluid .skip-12-12,
 .grid-fluid .skip-6-6,
 .grid-fluid .skip-4-4,
 .grid-fluid .skip-3-3,
 .grid-fluid .skip-2-2,
 .grid-fluid .skip-1-1 {
-  margin-left: calc(100% / 12 * 11 + 0.5rem);
+  margin-left: calc(100% / 12 * 11 + 1.25rem);
 }
-/* line 174, ../component/grid/style/_grid_fluid.scss */
+/* line 185, ../component/grid/style/_grid_fluid.scss */
 .grid-fluid.grid-rtl .width, .grid-fluid.grid-rtl .width-1-12, .grid-fluid.grid-rtl .width-2-12,
 .grid-fluid.grid-rtl .width-1-6, .grid-fluid.grid-rtl .width-3-12,
 .grid-fluid.grid-rtl .width-1-4, .grid-fluid.grid-rtl .width-4-12,
@@ -204,70 +213,14 @@ body {
 .grid-fluid.grid-rtl .width-1-1 {
   float: right;
 }
-/* line 178, ../component/grid/style/_grid_fluid.scss */
-.grid-fluid.grid-rtl .skip-1-12 {
-  margin-left: 0;
-  margin-right: calc(100% / 12);
-}
-/* line 184, ../component/grid/style/_grid_fluid.scss */
-.grid-fluid.grid-rtl .skip-2-12,
-.grid-fluid.grid-rtl .skip-1-6 {
-  margin-left: 0;
-  margin-right: calc(100% / 12 * 2);
-}
-/* line 190, ../component/grid/style/_grid_fluid.scss */
-.grid-fluid.grid-rtl .skip-3-12,
-.grid-fluid.grid-rtl .skip-1-4 {
-  margin-right: calc(100% / 12 * 3);
-}
-/* line 196, ../component/grid/style/_grid_fluid.scss */
-.grid-fluid.grid-rtl .skip-4-12,
-.grid-fluid.grid-rtl .skip-2-6,
-.grid-fluid.grid-rtl .skip-1-3 {
-  margin-right: calc(100% / 12 * 4);
-}
-/* line 200, ../component/grid/style/_grid_fluid.scss */
-.grid-fluid.grid-rtl .skip-5-12 {
-  margin-right: calc(100% / 12 * 5);
-}
-/* line 207, ../component/grid/style/_grid_fluid.scss */
-.grid-fluid.grid-rtl .skip-6-12,
-.grid-fluid.grid-rtl .skip-3-6,
-.grid-fluid.grid-rtl .skip-2-4,
-.grid-fluid.grid-rtl .skip-1-2 {
-  margin-right: calc(100% / 12 * 6);
-}
-/* line 211, ../component/grid/style/_grid_fluid.scss */
-.grid-fluid.grid-rtl .skip-7-12 {
-  margin-right: calc(100% / 12 * 7);
-}
-/* line 217, ../component/grid/style/_grid_fluid.scss */
-.grid-fluid.grid-rtl .skip-8-12,
-.grid-fluid.grid-rtl .skip-4-6,
-.grid-fluid.grid-rtl .skip-2-3 {
-  margin-right: calc(100% / 12 * 8);
-}
-/* line 222, ../component/grid/style/_grid_fluid.scss */
-.grid-fluid.grid-rtl .skip-9-12,
-.grid-fluid.grid-rtl .skip-3-4 {
-  margin-right: calc(100% / 12 * 9);
-}
-/* line 227, ../component/grid/style/_grid_fluid.scss */
-.grid-fluid.grid-rtl .skip-10-12,
-.grid-fluid.grid-rtl .skip-5-6 {
-  margin-right: calc(100% / 12 * 10);
-}
-/* line 231, ../component/grid/style/_grid_fluid.scss */
-.grid-fluid.grid-rtl .skip-11-12 {
-  margin-right: calc(100% / 12 * 11);
-}
-@media only screen and (max-width: 480px) {
-  /* line 238, ../component/grid/style/_grid_fluid.scss */
-  .grid-fluid .mobile-width-1-1 {
-    width: 100%;
+@media only screen and (max-width: 768px) {
+  /* line 192, ../component/grid/style/_grid_fluid.scss */
+  .grid-fluid .small-width-1-1 {
+    margin-bottom: 1rem;
+    width: auto;
   }
-  /* line 242, ../component/grid/style/_grid_fluid.scss */
-  .grid-fluid .mobile-hidden {
+  /* line 197, ../component/grid/style/_grid_fluid.scss */
+  .grid-fluid .small-hidden {
     display: none;
   }
 }
@@ -279,35 +232,12 @@ body {
 .header {
   background-color: #888888;
   color: white;
+  margin-bottom: 2rem;
   overflow: hidden;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
-/**
- * Section
- */
-/* line 5, ../component/section/style/_section.scss */
-.section {
-  margin: 1.5rem;
-}
-
-@media only screen and (max-width: 480px) {
-  /* line 11, ../component/section/style/_section.scss */
-  .section {
-    margin: 0.5rem;
-  }
-}
-@media only screen and (min-width: 481px) and (max-width: 1024px) {
-  /* line 18, ../component/section/style/_section.scss */
-  .section {
-    margin: 1rem;
-  }
-}
-@media only screen and (min-width: 1441px) {
-  /* line 25, ../component/section/style/_section.scss */
-  .section {
-    margin: 2rem;
-  }
-}
 /**
  * Button
  */
@@ -345,6 +275,16 @@ body {
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
+/* line 21, ../global/_mixin.scss */
+.ul:first-child,
+.wysiwyg ul:first-child {
+  margin-top: 0;
+}
+/* line 25, ../global/_mixin.scss */
+.ul:last-child,
+.wysiwyg ul:last-child {
+  margin-bottom: 0;
+}
 
 /* line 12, ../element/list/style/_list.scss */
 .ol,
@@ -353,12 +293,32 @@ body {
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
+/* line 21, ../global/_mixin.scss */
+.ol:first-child,
+.wysiwyg ol:first-child {
+  margin-top: 0;
+}
+/* line 25, ../global/_mixin.scss */
+.ol:last-child,
+.wysiwyg ol:last-child {
+  margin-bottom: 0;
+}
 
 /* line 18, ../element/list/style/_list.scss */
 .dl,
 .wysiwyg dl {
   margin-bottom: 1rem;
   margin-top: 1rem;
+}
+/* line 21, ../global/_mixin.scss */
+.dl:first-child,
+.wysiwyg dl:first-child {
+  margin-top: 0;
+}
+/* line 25, ../global/_mixin.scss */
+.dl:last-child,
+.wysiwyg dl:last-child {
+  margin-bottom: 0;
 }
 /* line 21, ../element/list/style/_list.scss */
 .dl dt,
@@ -381,44 +341,58 @@ html {
   -webkit-text-size-adjust: none;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   /* line 13, ../element/text/style/_text.scss */
   html {
-    font-size: 80%;
-  }
-}
-@media only screen and (min-width: 481px) and (max-width: 1024px) {
-  /* line 20, ../element/text/style/_text.scss */
-  html {
-    font-size: 90%;
+    font-size: small;
   }
 }
 @media only screen and (min-width: 1441px) {
-  /* line 27, ../element/text/style/_text.scss */
+  /* line 20, ../element/text/style/_text.scss */
   html {
-    font-size: 120%;
+    font-size: large;
   }
 }
 /**
  * Heading
  */
-/* line 38, ../element/text/style/_text.scss */
+/* line 31, ../element/text/style/_text.scss */
 .h1,
 .wysiwyg h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
+/* line 21, ../global/_mixin.scss */
+.h1:first-child,
+.wysiwyg h1:first-child {
+  margin-top: 0;
+}
+/* line 25, ../global/_mixin.scss */
+.h1:last-child,
+.wysiwyg h1:last-child {
+  margin-bottom: 0;
+}
 
-/* line 43, ../element/text/style/_text.scss */
+/* line 36, ../element/text/style/_text.scss */
 .h2,
 .wysiwyg h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
+/* line 21, ../global/_mixin.scss */
+.h2:first-child,
+.wysiwyg h2:first-child {
+  margin-top: 0;
+}
+/* line 25, ../global/_mixin.scss */
+.h2:last-child,
+.wysiwyg h2:last-child {
+  margin-bottom: 0;
+}
 
-/* line 48, ../element/text/style/_text.scss */
+/* line 41, ../element/text/style/_text.scss */
 .h3,
 .wysiwyg h3 {
   font-size: 1.25rem;
@@ -426,38 +400,68 @@ html {
   margin-top: 1rem;
   color: #555555;
 }
+/* line 21, ../global/_mixin.scss */
+.h3:first-child,
+.wysiwyg h3:first-child {
+  margin-top: 0;
+}
+/* line 25, ../global/_mixin.scss */
+.h3:last-child,
+.wysiwyg h3:last-child {
+  margin-bottom: 0;
+}
 
-/* line 54, ../element/text/style/_text.scss */
+/* line 47, ../element/text/style/_text.scss */
 .h4,
 .wysiwyg h4 {
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
+/* line 21, ../global/_mixin.scss */
+.h4:first-child,
+.wysiwyg h4:first-child {
+  margin-top: 0;
+}
+/* line 25, ../global/_mixin.scss */
+.h4:last-child,
+.wysiwyg h4:last-child {
+  margin-bottom: 0;
+}
 
 /**
  * Paragrapgh
  */
-/* line 64, ../element/text/style/_text.scss */
-.p, .p_large, .p_italic,
+/* line 57, ../element/text/style/_text.scss */
+.p, .p-large, .p-italic,
 .wysiwyg p {
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
+/* line 21, ../global/_mixin.scss */
+.p:first-child, .p-large:first-child, .p-italic:first-child,
+.wysiwyg p:first-child {
+  margin-top: 0;
+}
+/* line 25, ../global/_mixin.scss */
+.p:last-child, .p-large:last-child, .p-italic:last-child,
+.wysiwyg p:last-child {
+  margin-bottom: 0;
+}
 
-/* line 68, ../element/text/style/_text.scss */
-.p_large {
+/* line 61, ../element/text/style/_text.scss */
+.p-large {
   font-size: 1.5rem;
 }
 
-/* line 73, ../element/text/style/_text.scss */
-.p_italic {
+/* line 66, ../element/text/style/_text.scss */
+.p-italic {
   font-style: italic;
 }
 
 /**
  * Other
  */
-/* line 84, ../element/text/style/_text.scss */
+/* line 77, ../element/text/style/_text.scss */
 .hr,
 .wysiwyg hr {
   background-color: #555555;

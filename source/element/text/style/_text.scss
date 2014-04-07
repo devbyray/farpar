@@ -8,24 +8,17 @@ html {
 	-webkit-text-size-adjust: none;
 }
 
-// Smaller screen
-@media only screen and (max-width: 480px) {
-	html {
-		font-size: 80%;
-	}
-}
-
 // Small screen
-@media only screen and (min-width: 481px) and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
 	html {
-		font-size: 90%;
+		font-size: small;
 	}
 }
 
 // large screen
 @media only screen and (min-width: 1441px) {
 	html {
-		font-size: 120%;
+		font-size: large;
 	}
 }
 
@@ -65,12 +58,12 @@ html {
 	@include text-block();
 }
 
-.p_large {
+.p-large {
 	@extend .p;
 	@include font-size(24);
 }
 
-.p_italic {
+.p-italic {
 	@extend .p;
 	font-style: italic;
 }
