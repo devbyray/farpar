@@ -78,6 +78,12 @@ html {
 	background-color: $color-darkGrey;
 	border: none;
 	height: 1px;
-	margin-bottom: 2rem;
-	margin-top: 2rem;
+	margin-bottom: $margin-double;
+	margin-top: $margin-double;
+}
+
+.hr-connected {
+	@extend .hr;
+	margin-bottom: $margin-double;
+	margin-top: $margin-single;
 }

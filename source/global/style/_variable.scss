@@ -2,12 +2,20 @@
  * Color
  */
 
-// default
 $color-defaultBackground: #888;
 $color-defaultForeground: #fff;
 
-// named
 $color-darkGrey: #555;
 $color-green: #6b8e23;
 $color-purple: #9370db;
 $color-teal: #008080;
+
+
+/**
+ * Margin and padding
+ */
+
+$gutter-default: 1rem;
+
+$margin-single: 1rem;
+$margin-double: 2rem;

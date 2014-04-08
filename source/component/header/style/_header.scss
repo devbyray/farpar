@@ -5,8 +5,12 @@
 .header {
 	background-color: $color-defaultBackground;
 	color: $color-defaultForeground;
-	margin-bottom: 2rem;
+	margin-bottom: $margin-double;
 	overflow: hidden;
-	padding-bottom: 1rem;
-	padding-top: 1rem;
+	padding-bottom: $margin-single;
+	padding-top: $margin-single;
+
+	*:last-child {
+		margin-bottom: 0;
+	}
 }

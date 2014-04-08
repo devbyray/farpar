@@ -8,6 +8,7 @@
 	color: $color-defaultForeground;
 	display: inline-block;
 	font-size: 1rem;
+	margin-bottom: $margin-single;
 	padding: 0.5rem 1rem;
 	text-decoration: none;
 	&:hover {
@@ -20,5 +21,5 @@
 	background-color: $color-green;
 	&:hover {
 		background-color: lighten($color-green, 10%);
-	}	
+	}
 }
