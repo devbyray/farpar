@@ -37,17 +37,20 @@ body {
   color: #fff;
   line-height: 2;
   margin-bottom: 1rem;
+  overflow: hidden;
   text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-/* line 23, ../component/grid-fluid/style/_grid-fluid.scss */
+/* line 26, ../component/grid-fluid/style/_grid-fluid.scss */
 .grid-fluid .demo-a {
   background-color: mediumpurple;
 }
-/* line 28, ../component/grid-fluid/style/_grid-fluid.scss */
+/* line 31, ../component/grid-fluid/style/_grid-fluid.scss */
 .grid-fluid .demo-b {
   background-color: teal;
 }
-/* line 35, ../component/grid-fluid/style/_grid-fluid.scss */
+/* line 38, ../component/grid-fluid/style/_grid-fluid.scss */
 .grid-fluid .width, .grid-fluid .width-1-12, .grid-fluid .width-2-12,
 .grid-fluid .width-1-6, .grid-fluid .width-3-12,
 .grid-fluid .width-1-4, .grid-fluid .width-4-12,
@@ -67,63 +70,64 @@ body {
 .grid-fluid .width-1-1 {
   float: left;
   margin-left: 1rem;
+  box-sizing: border-box;
 }
-/* line 40, ../component/grid-fluid/style/_grid-fluid.scss */
+/* line 44, ../component/grid-fluid/style/_grid-fluid.scss */
 .grid-fluid .width-1-12 {
   width: calc(100% / 12 - 1rem);
 }
-/* line 46, ../component/grid-fluid/style/_grid-fluid.scss */
+/* line 50, ../component/grid-fluid/style/_grid-fluid.scss */
 .grid-fluid .width-2-12,
 .grid-fluid .width-1-6 {
   width: calc(100% / 12 * 2 - 1rem);
 }
-/* line 52, ../component/grid-fluid/style/_grid-fluid.scss */
+/* line 56, ../component/grid-fluid/style/_grid-fluid.scss */
 .grid-fluid .width-3-12,
 .grid-fluid .width-1-4 {
   width: calc(100% / 12 * 3 - 1rem);
 }
-/* line 59, ../component/grid-fluid/style/_grid-fluid.scss */
+/* line 63, ../component/grid-fluid/style/_grid-fluid.scss */
 .grid-fluid .width-4-12,
 .grid-fluid .width-2-6,
 .grid-fluid .width-1-3 {
   width: calc(100% / 12 * 4 - 1rem);
 }
-/* line 64, ../component/grid-fluid/style/_grid-fluid.scss */
+/* line 68, ../component/grid-fluid/style/_grid-fluid.scss */
 .grid-fluid .width-5-12 {
   width: calc(100% / 12 * 5 - 1rem);
 }
-/* line 72, ../component/grid-fluid/style/_grid-fluid.scss */
+/* line 76, ../component/grid-fluid/style/_grid-fluid.scss */
 .grid-fluid .width-6-12,
 .grid-fluid .width-3-6,
 .grid-fluid .width-2-4,
 .grid-fluid .width-1-2 {
   width: calc(100% / 12 * 6 - 1rem);
 }
-/* line 77, ../component/grid-fluid/style/_grid-fluid.scss */
+/* line 81, ../component/grid-fluid/style/_grid-fluid.scss */
 .grid-fluid .width-7-12 {
   width: calc(100% / 12 * 7 - 1rem);
 }
-/* line 84, ../component/grid-fluid/style/_grid-fluid.scss */
+/* line 88, ../component/grid-fluid/style/_grid-fluid.scss */
 .grid-fluid .width-8-12,
 .grid-fluid .width-4-6,
 .grid-fluid .width-2-3 {
   width: calc(100% / 12 * 8 - 1rem);
 }
-/* line 90, ../component/grid-fluid/style/_grid-fluid.scss */
+/* line 94, ../component/grid-fluid/style/_grid-fluid.scss */
 .grid-fluid .width-9-12,
 .grid-fluid .width-3-4 {
   width: calc(100% / 12 * 9 - 1rem);
 }
-/* line 96, ../component/grid-fluid/style/_grid-fluid.scss */
+/* line 100, ../component/grid-fluid/style/_grid-fluid.scss */
 .grid-fluid .width-10-12,
 .grid-fluid .width-5-6 {
   width: calc(100% / 12 * 10 - 1rem);
 }
-/* line 101, ../component/grid-fluid/style/_grid-fluid.scss */
+/* line 105, ../component/grid-fluid/style/_grid-fluid.scss */
 .grid-fluid .width-11-12 {
   width: calc(100% / 12 * 11 - 1rem);
 }
-/* line 111, ../component/grid-fluid/style/_grid-fluid.scss */
+/* line 115, ../component/grid-fluid/style/_grid-fluid.scss */
 .grid-fluid .width-12-12,
 .grid-fluid .width-6-6,
 .grid-fluid .width-4-4,
@@ -132,58 +136,58 @@ body {
 .grid-fluid .width-1-1 {
   width: calc(100% - 1rem);
 }
-/* line 117, ../component/grid-fluid/style/_grid-fluid.scss */
+/* line 121, ../component/grid-fluid/style/_grid-fluid.scss */
 .grid-fluid .skip-1-12 {
   margin-left: calc(100% / 12 + 1rem);
 }
-/* line 122, ../component/grid-fluid/style/_grid-fluid.scss */
+/* line 126, ../component/grid-fluid/style/_grid-fluid.scss */
 .grid-fluid .skip-2-12,
 .grid-fluid .skip-1-6 {
   margin-left: calc(100% / 12 * 2 + 1rem);
 }
-/* line 127, ../component/grid-fluid/style/_grid-fluid.scss */
+/* line 131, ../component/grid-fluid/style/_grid-fluid.scss */
 .grid-fluid .skip-3-12,
 .grid-fluid .skip-1-4 {
   margin-left: calc(100% / 12 * 3 + 1rem);
 }
-/* line 133, ../component/grid-fluid/style/_grid-fluid.scss */
+/* line 137, ../component/grid-fluid/style/_grid-fluid.scss */
 .grid-fluid .skip-4-12,
 .grid-fluid .skip-2-6,
 .grid-fluid .skip-1-3 {
   margin-left: calc(100% / 12 * 4 + 1rem);
 }
-/* line 137, ../component/grid-fluid/style/_grid-fluid.scss */
+/* line 141, ../component/grid-fluid/style/_grid-fluid.scss */
 .grid-fluid .skip-5-12 {
   margin-left: calc(100% / 12 * 5 + 1rem);
 }
-/* line 144, ../component/grid-fluid/style/_grid-fluid.scss */
+/* line 148, ../component/grid-fluid/style/_grid-fluid.scss */
 .grid-fluid .skip-6-12,
 .grid-fluid .skip-3-6,
 .grid-fluid .skip-2-4,
 .grid-fluid .skip-1-2 {
   margin-left: calc(100% / 12 * 6 + 1rem);
 }
-/* line 148, ../component/grid-fluid/style/_grid-fluid.scss */
+/* line 152, ../component/grid-fluid/style/_grid-fluid.scss */
 .grid-fluid .skip-7-12 {
   margin-left: calc(100% / 12 * 7 + 1rem);
 }
-/* line 154, ../component/grid-fluid/style/_grid-fluid.scss */
+/* line 158, ../component/grid-fluid/style/_grid-fluid.scss */
 .grid-fluid .skip-8-12,
 .grid-fluid .skip-4-6,
 .grid-fluid .skip-2-3 {
   margin-left: calc(100% / 12 * 8 + 1rem);
 }
-/* line 159, ../component/grid-fluid/style/_grid-fluid.scss */
+/* line 163, ../component/grid-fluid/style/_grid-fluid.scss */
 .grid-fluid .skip-9-12,
 .grid-fluid .skip-3-4 {
   margin-left: calc(100% / 12 * 9 + 1rem);
 }
-/* line 164, ../component/grid-fluid/style/_grid-fluid.scss */
+/* line 168, ../component/grid-fluid/style/_grid-fluid.scss */
 .grid-fluid .skip-10-12,
 .grid-fluid .skip-5-6 {
   margin-left: calc(100% / 12 * 10 + 1rem);
 }
-/* line 173, ../component/grid-fluid/style/_grid-fluid.scss */
+/* line 177, ../component/grid-fluid/style/_grid-fluid.scss */
 .grid-fluid .skip-12-12,
 .grid-fluid .skip-6-6,
 .grid-fluid .skip-4-4,
@@ -192,7 +196,7 @@ body {
 .grid-fluid .skip-1-1 {
   margin-left: calc(100% / 12 * 11 + 1rem);
 }
-/* line 179, ../component/grid-fluid/style/_grid-fluid.scss */
+/* line 183, ../component/grid-fluid/style/_grid-fluid.scss */
 .grid-fluid.grid-rtl .width, .grid-fluid.grid-rtl .width-1-12, .grid-fluid.grid-rtl .width-2-12,
 .grid-fluid.grid-rtl .width-1-6, .grid-fluid.grid-rtl .width-3-12,
 .grid-fluid.grid-rtl .width-1-4, .grid-fluid.grid-rtl .width-4-12,
@@ -212,14 +216,477 @@ body {
 .grid-fluid.grid-rtl .width-1-1 {
   float: right;
 }
+/* line 188, ../component/grid-fluid/style/_grid-fluid.scss */
+.grid-fluid.grid-rtl .skip-1-12 {
+  margin-left: 1rem;
+  margin-right: calc(100% / 12);
+}
+/* line 194, ../component/grid-fluid/style/_grid-fluid.scss */
+.grid-fluid.grid-rtl .skip-2-12,
+.grid-fluid.grid-rtl .skip-1-6 {
+  margin-left: 1rem;
+  margin-right: calc(100% / 12 * 2);
+}
+/* line 200, ../component/grid-fluid/style/_grid-fluid.scss */
+.grid-fluid.grid-rtl .skip-3-12,
+.grid-fluid.grid-rtl .skip-1-4 {
+  margin-left: 1rem;
+  margin-right: calc(100% / 12 * 3);
+}
+/* line 207, ../component/grid-fluid/style/_grid-fluid.scss */
+.grid-fluid.grid-rtl .skip-4-12,
+.grid-fluid.grid-rtl .skip-2-6,
+.grid-fluid.grid-rtl .skip-1-3 {
+  margin-left: 1rem;
+  margin-right: calc(100% / 12 * 4);
+}
+/* line 212, ../component/grid-fluid/style/_grid-fluid.scss */
+.grid-fluid.grid-rtl .skip-5-12 {
+  margin-left: 1rem;
+  margin-right: calc(100% / 12 * 5);
+}
+/* line 220, ../component/grid-fluid/style/_grid-fluid.scss */
+.grid-fluid.grid-rtl .skip-6-12,
+.grid-fluid.grid-rtl .skip-3-6,
+.grid-fluid.grid-rtl .skip-2-4,
+.grid-fluid.grid-rtl .skip-1-2 {
+  margin-left: 1rem;
+  margin-right: calc(100% / 12 * 6);
+}
+/* line 225, ../component/grid-fluid/style/_grid-fluid.scss */
+.grid-fluid.grid-rtl .skip-7-12 {
+  margin-left: 1rem;
+  margin-right: calc(100% / 12 * 7);
+}
+/* line 232, ../component/grid-fluid/style/_grid-fluid.scss */
+.grid-fluid.grid-rtl .skip-8-12,
+.grid-fluid.grid-rtl .skip-4-6,
+.grid-fluid.grid-rtl .skip-2-3 {
+  margin-left: 1rem;
+  margin-right: calc(100% / 12 * 8);
+}
+/* line 238, ../component/grid-fluid/style/_grid-fluid.scss */
+.grid-fluid.grid-rtl .skip-9-12,
+.grid-fluid.grid-rtl .skip-3-4 {
+  margin-left: 1rem;
+  margin-right: calc(100% / 12 * 9);
+}
+/* line 244, ../component/grid-fluid/style/_grid-fluid.scss */
+.grid-fluid.grid-rtl .skip-10-12,
+.grid-fluid.grid-rtl .skip-5-6 {
+  margin-left: 1rem;
+  margin-right: calc(100% / 12 * 10);
+}
+/* line 254, ../component/grid-fluid/style/_grid-fluid.scss */
+.grid-fluid.grid-rtl .skip-12-12,
+.grid-fluid.grid-rtl .skip-6-6,
+.grid-fluid.grid-rtl .skip-4-4,
+.grid-fluid.grid-rtl .skip-3-3,
+.grid-fluid.grid-rtl .skip-2-2,
+.grid-fluid.grid-rtl .skip-1-1 {
+  margin-left: 1rem;
+  margin-right: calc(100% / 12 * 11 + 1rem);
+}
 @media only screen and (max-width: 768px) {
-  /* line 186, ../component/grid-fluid/style/_grid-fluid.scss */
-  .grid-fluid .small-width-1-1 {
-    width: 100%;
-  }
-  /* line 190, ../component/grid-fluid/style/_grid-fluid.scss */
+  /* line 262, ../component/grid-fluid/style/_grid-fluid.scss */
   .grid-fluid .small-hidden {
     display: none;
+  }
+  /* line 266, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .small-width-1-12 {
+    width: calc(100% / 12 - 1rem);
+  }
+  /* line 272, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .small-width-2-12,
+  .grid-fluid .small-width-1-6 {
+    width: calc(100% / 12 * 2 - 1rem);
+  }
+  /* line 278, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .small-width-3-12,
+  .grid-fluid .small-width-1-4 {
+    width: calc(100% / 12 * 3 - 1rem);
+  }
+  /* line 285, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .small-width-4-12,
+  .grid-fluid .small-width-2-6,
+  .grid-fluid .small-width-1-3 {
+    width: calc(100% / 12 * 4 - 1rem);
+  }
+  /* line 290, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .small-width-5-12 {
+    width: calc(100% / 12 * 5 - 1rem);
+  }
+  /* line 298, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .small-width-6-12,
+  .grid-fluid .small-width-3-6,
+  .grid-fluid .small-width-2-4,
+  .grid-fluid .small-width-1-2 {
+    width: calc(100% / 12 * 6 - 1rem);
+  }
+  /* line 303, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .small-width-7-12 {
+    width: calc(100% / 12 * 7 - 1rem);
+  }
+  /* line 310, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .small-width-8-12,
+  .grid-fluid .small-width-4-6,
+  .grid-fluid .small-width-2-3 {
+    width: calc(100% / 12 * 8 - 1rem);
+  }
+  /* line 316, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .small-width-9-12,
+  .grid-fluid .small-width-3-4 {
+    width: calc(100% / 12 * 9 - 1rem);
+  }
+  /* line 322, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .small-width-10-12,
+  .grid-fluid .small-width-5-6 {
+    width: calc(100% / 12 * 10 - 1rem);
+  }
+  /* line 327, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .small-width-11-12 {
+    width: calc(100% / 12 * 11 - 1rem);
+  }
+  /* line 337, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .small-width-12-12,
+  .grid-fluid .small-width-6-6,
+  .grid-fluid .small-width-4-4,
+  .grid-fluid .small-width-3-3,
+  .grid-fluid .small-width-2-2,
+  .grid-fluid .small-width-1-1 {
+    width: calc(100% - 1rem);
+  }
+  /* line 343, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .small-skip-1-12 {
+    margin-left: calc(100% / 12 + 1rem);
+  }
+  /* line 348, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .small-skip-2-12,
+  .grid-fluid .small-skip-1-6 {
+    margin-left: calc(100% / 12 * 2 + 1rem);
+  }
+  /* line 353, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .small-skip-3-12,
+  .grid-fluid .small-skip-1-4 {
+    margin-left: calc(100% / 12 * 3 + 1rem);
+  }
+  /* line 359, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .small-skip-4-12,
+  .grid-fluid .small-skip-2-6,
+  .grid-fluid .small-skip-1-3 {
+    margin-left: calc(100% / 12 * 4 + 1rem);
+  }
+  /* line 363, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .small-skip-5-12 {
+    margin-left: calc(100% / 12 * 5 + 1rem);
+  }
+  /* line 370, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .small-skip-6-12,
+  .grid-fluid .small-skip-3-6,
+  .grid-fluid .small-skip-2-4,
+  .grid-fluid .small-skip-1-2 {
+    margin-left: calc(100% / 12 * 6 + 1rem);
+  }
+  /* line 374, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .small-skip-7-12 {
+    margin-left: calc(100% / 12 * 7 + 1rem);
+  }
+  /* line 380, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .small-skip-8-12,
+  .grid-fluid .small-skip-4-6,
+  .grid-fluid .small-skip-2-3 {
+    margin-left: calc(100% / 12 * 8 + 1rem);
+  }
+  /* line 385, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .small-skip-9-12,
+  .grid-fluid .small-skip-3-4 {
+    margin-left: calc(100% / 12 * 9 + 1rem);
+  }
+  /* line 390, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .small-skip-10-12,
+  .grid-fluid .small-skip-5-6 {
+    margin-left: calc(100% / 12 * 10 + 1rem);
+  }
+  /* line 399, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .small-skip-12-12,
+  .grid-fluid .small-skip-6-6,
+  .grid-fluid .small-skip-4-4,
+  .grid-fluid .small-skip-3-3,
+  .grid-fluid .small-skip-2-2,
+  .grid-fluid .small-skip-1-1 {
+    margin-left: calc(100% / 12 * 11 + 1rem);
+  }
+  /* line 407, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid.grid-rtl .small-skip-1-12 {
+    margin-left: 1rem;
+    margin-right: calc(100% / 12);
+  }
+  /* line 413, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid.grid-rtl .small-skip-2-12,
+  .grid-fluid.grid-rtl .small-skip-1-6 {
+    margin-left: 1rem;
+    margin-right: calc(100% / 12 * 2);
+  }
+  /* line 419, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid.grid-rtl .small-skip-3-12,
+  .grid-fluid.grid-rtl .small-skip-1-4 {
+    margin-left: 1rem;
+    margin-right: calc(100% / 12 * 3);
+  }
+  /* line 426, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid.grid-rtl .small-skip-4-12,
+  .grid-fluid.grid-rtl .small-skip-2-6,
+  .grid-fluid.grid-rtl .small-skip-1-3 {
+    margin-left: 1rem;
+    margin-right: calc(100% / 12 * 4);
+  }
+  /* line 431, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid.grid-rtl .small-skip-5-12 {
+    margin-left: 1rem;
+    margin-right: calc(100% / 12 * 5);
+  }
+  /* line 439, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid.grid-rtl .small-skip-6-12,
+  .grid-fluid.grid-rtl .small-skip-3-6,
+  .grid-fluid.grid-rtl .small-skip-2-4,
+  .grid-fluid.grid-rtl .small-skip-1-2 {
+    margin-left: 1rem;
+    margin-right: calc(100% / 12 * 6);
+  }
+  /* line 444, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid.grid-rtl .small-skip-7-12 {
+    margin-left: 1rem;
+    margin-right: calc(100% / 12 * 7);
+  }
+  /* line 451, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid.grid-rtl .small-skip-8-12,
+  .grid-fluid.grid-rtl .small-skip-4-6,
+  .grid-fluid.grid-rtl .small-skip-2-3 {
+    margin-left: 1rem;
+    margin-right: calc(100% / 12 * 8);
+  }
+  /* line 457, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid.grid-rtl .small-skip-9-12,
+  .grid-fluid.grid-rtl .small-skip-3-4 {
+    margin-left: 1rem;
+    margin-right: calc(100% / 12 * 9);
+  }
+  /* line 463, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid.grid-rtl .small-skip-10-12,
+  .grid-fluid.grid-rtl .small-skip-5-6 {
+    margin-left: 1rem;
+    margin-right: calc(100% / 12 * 10);
+  }
+  /* line 473, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid.grid-rtl .small-skip-12-12,
+  .grid-fluid.grid-rtl .small-skip-6-6,
+  .grid-fluid.grid-rtl .small-skip-4-4,
+  .grid-fluid.grid-rtl .small-skip-3-3,
+  .grid-fluid.grid-rtl .small-skip-2-2,
+  .grid-fluid.grid-rtl .small-skip-1-1 {
+    margin-left: 1rem;
+    margin-right: calc(100% / 12 * 11 + 1rem);
+  }
+}
+@media only screen and (min-width: 1440px) {
+  /* line 482, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .large-hidden {
+    display: none;
+  }
+  /* line 486, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .large-width-1-12 {
+    width: calc(100% / 12 - 1rem);
+  }
+  /* line 492, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .large-width-2-12,
+  .grid-fluid .large-width-1-6 {
+    width: calc(100% / 12 * 2 - 1rem);
+  }
+  /* line 498, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .large-width-3-12,
+  .grid-fluid .large-width-1-4 {
+    width: calc(100% / 12 * 3 - 1rem);
+  }
+  /* line 505, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .large-width-4-12,
+  .grid-fluid .large-width-2-6,
+  .grid-fluid .large-width-1-3 {
+    width: calc(100% / 12 * 4 - 1rem);
+  }
+  /* line 510, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .large-width-5-12 {
+    width: calc(100% / 12 * 5 - 1rem);
+  }
+  /* line 518, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .large-width-6-12,
+  .grid-fluid .large-width-3-6,
+  .grid-fluid .large-width-2-4,
+  .grid-fluid .large-width-1-2 {
+    width: calc(100% / 12 * 6 - 1rem);
+  }
+  /* line 523, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .large-width-7-12 {
+    width: calc(100% / 12 * 7 - 1rem);
+  }
+  /* line 530, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .large-width-8-12,
+  .grid-fluid .large-width-4-6,
+  .grid-fluid .large-width-2-3 {
+    width: calc(100% / 12 * 8 - 1rem);
+  }
+  /* line 536, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .large-width-9-12,
+  .grid-fluid .large-width-3-4 {
+    width: calc(100% / 12 * 9 - 1rem);
+  }
+  /* line 542, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .large-width-10-12,
+  .grid-fluid .large-width-5-6 {
+    width: calc(100% / 12 * 10 - 1rem);
+  }
+  /* line 547, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .large-width-11-12 {
+    width: calc(100% / 12 * 11 - 1rem);
+  }
+  /* line 557, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .large-width-12-12,
+  .grid-fluid .large-width-6-6,
+  .grid-fluid .large-width-4-4,
+  .grid-fluid .large-width-3-3,
+  .grid-fluid .large-width-2-2,
+  .grid-fluid .large-width-1-1 {
+    width: calc(100% - 1rem);
+  }
+  /* line 563, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .large-skip-1-12 {
+    margin-left: calc(100% / 12 + 1rem);
+  }
+  /* line 568, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .large-skip-2-12,
+  .grid-fluid .large-skip-1-6 {
+    margin-left: calc(100% / 12 * 2 + 1rem);
+  }
+  /* line 573, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .large-skip-3-12,
+  .grid-fluid .large-skip-1-4 {
+    margin-left: calc(100% / 12 * 3 + 1rem);
+  }
+  /* line 579, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .large-skip-4-12,
+  .grid-fluid .large-skip-2-6,
+  .grid-fluid .large-skip-1-3 {
+    margin-left: calc(100% / 12 * 4 + 1rem);
+  }
+  /* line 583, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .large-skip-5-12 {
+    margin-left: calc(100% / 12 * 5 + 1rem);
+  }
+  /* line 590, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .large-skip-6-12,
+  .grid-fluid .large-skip-3-6,
+  .grid-fluid .large-skip-2-4,
+  .grid-fluid .large-skip-1-2 {
+    margin-left: calc(100% / 12 * 6 + 1rem);
+  }
+  /* line 594, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .large-skip-7-12 {
+    margin-left: calc(100% / 12 * 7 + 1rem);
+  }
+  /* line 600, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .large-skip-8-12,
+  .grid-fluid .large-skip-4-6,
+  .grid-fluid .large-skip-2-3 {
+    margin-left: calc(100% / 12 * 8 + 1rem);
+  }
+  /* line 605, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .large-skip-9-12,
+  .grid-fluid .large-skip-3-4 {
+    margin-left: calc(100% / 12 * 9 + 1rem);
+  }
+  /* line 610, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .large-skip-10-12,
+  .grid-fluid .large-skip-5-6 {
+    margin-left: calc(100% / 12 * 10 + 1rem);
+  }
+  /* line 619, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid .large-skip-12-12,
+  .grid-fluid .large-skip-6-6,
+  .grid-fluid .large-skip-4-4,
+  .grid-fluid .large-skip-3-3,
+  .grid-fluid .large-skip-2-2,
+  .grid-fluid .large-skip-1-1 {
+    margin-left: calc(100% / 12 * 11 + 1rem);
+  }
+  /* line 627, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid.grid-rtl .large-skip-1-12 {
+    margin-left: 1rem;
+    margin-right: calc(100% / 12);
+  }
+  /* line 633, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid.grid-rtl .large-skip-2-12,
+  .grid-fluid.grid-rtl .large-skip-1-6 {
+    margin-left: 1rem;
+    margin-right: calc(100% / 12 * 2);
+  }
+  /* line 639, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid.grid-rtl .large-skip-3-12,
+  .grid-fluid.grid-rtl .large-skip-1-4 {
+    margin-left: 1rem;
+    margin-right: calc(100% / 12 * 3);
+  }
+  /* line 646, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid.grid-rtl .large-skip-4-12,
+  .grid-fluid.grid-rtl .large-skip-2-6,
+  .grid-fluid.grid-rtl .large-skip-1-3 {
+    margin-left: 1rem;
+    margin-right: calc(100% / 12 * 4);
+  }
+  /* line 651, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid.grid-rtl .large-skip-5-12 {
+    margin-left: 1rem;
+    margin-right: calc(100% / 12 * 5);
+  }
+  /* line 659, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid.grid-rtl .large-skip-6-12,
+  .grid-fluid.grid-rtl .large-skip-3-6,
+  .grid-fluid.grid-rtl .large-skip-2-4,
+  .grid-fluid.grid-rtl .large-skip-1-2 {
+    margin-left: 1rem;
+    margin-right: calc(100% / 12 * 6);
+  }
+  /* line 664, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid.grid-rtl .large-skip-7-12 {
+    margin-left: 1rem;
+    margin-right: calc(100% / 12 * 7);
+  }
+  /* line 671, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid.grid-rtl .large-skip-8-12,
+  .grid-fluid.grid-rtl .large-skip-4-6,
+  .grid-fluid.grid-rtl .large-skip-2-3 {
+    margin-left: 1rem;
+    margin-right: calc(100% / 12 * 8);
+  }
+  /* line 677, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid.grid-rtl .large-skip-9-12,
+  .grid-fluid.grid-rtl .large-skip-3-4 {
+    margin-left: 1rem;
+    margin-right: calc(100% / 12 * 9);
+  }
+  /* line 683, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid.grid-rtl .large-skip-10-12,
+  .grid-fluid.grid-rtl .large-skip-5-6 {
+    margin-left: 1rem;
+    margin-right: calc(100% / 12 * 10);
+  }
+  /* line 693, ../component/grid-fluid/style/_grid-fluid.scss */
+  .grid-fluid.grid-rtl .large-skip-12-12,
+  .grid-fluid.grid-rtl .large-skip-6-6,
+  .grid-fluid.grid-rtl .large-skip-4-4,
+  .grid-fluid.grid-rtl .large-skip-3-3,
+  .grid-fluid.grid-rtl .large-skip-2-2,
+  .grid-fluid.grid-rtl .large-skip-1-1 {
+    margin-left: 1rem;
+    margin-right: calc(100% / 12 * 11 + 1rem);
   }
 }
 
@@ -244,27 +711,29 @@ body {
  * Button
  */
 /* line 5, ../element/button/style/_button.scss */
-.button, .button_green {
+.button, .button-green {
   background-color: #888888;
   border: none;
   color: white;
   display: inline-block;
   font-size: 1rem;
-  margin-bottom: 1rem;
+  margin: 0 0 1rem;
+  line-height: inherit;
   padding: 0.5rem 1rem;
   text-decoration: none;
+  vertical-align: bottom;
 }
-/* line 14, ../element/button/style/_button.scss */
-.button:hover, .button_green:hover {
+/* line 18, ../element/button/style/_button.scss */
+.button:hover, .button-green:hover {
   background-color: #a2a2a2;
 }
 
-/* line 19, ../element/button/style/_button.scss */
-.button_green {
+/* line 23, ../element/button/style/_button.scss */
+.button-green {
   background-color: olivedrab;
 }
-/* line 22, ../element/button/style/_button.scss */
-.button_green:hover {
+/* line 26, ../element/button/style/_button.scss */
+.button-green:hover {
   background-color: #8ab72d;
 }
 

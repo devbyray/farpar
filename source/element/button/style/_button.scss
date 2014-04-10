@@ -8,15 +8,19 @@
 	color: $color-defaultForeground;
 	display: inline-block;
 	font-size: 1rem;
-	margin-bottom: $margin-single;
+	// margin reset for button element included
+	margin: 0 0 $margin-single;
+	line-height: inherit;
 	padding: 0.5rem 1rem;
 	text-decoration: none;
+	vertical-align: bottom;
+
 	&:hover {
 		background-color: lighten($color-defaultBackground, 10%);
 	}
 }
 
-.button_green {
+.button-green {
 	@extend .button;
 	background-color: $color-green;
 	&:hover {
