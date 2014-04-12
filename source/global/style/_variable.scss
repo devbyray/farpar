@@ -2,8 +2,8 @@
  * Color
  */
 
-$color-defaultBackground: #888;
 $color-defaultForeground: #fff;
+$color-defaultBackground: #888;
 
 $color-darkGrey: #555;
 $color-green: #6b8e23;
@@ -12,10 +12,18 @@ $color-teal: #008080;
 
 
 /**
- * Margin and padding
+ * Fluid grid
  */
 
 $gutter-default: 1rem;
+$gutter-onSmall: 1rem;
+$gutter-onMedium: 1rem;
+$gutter-onLarge: 1rem;
+
+
+/**
+ * Margin and padding
+ */
 
 $margin-single: 1rem;
 $margin-double: 2rem;
