@@ -4,7 +4,12 @@
 
 .grid-fluid {
 	margin-left: -$gutter-default;
-	overflow: hidden;
+
+	&:after {
+		clear: both;
+		content: "";
+		display: block;
+	}
 
 	&.grid-padding {
 		padding-left: $gutter-default;
@@ -13,14 +18,20 @@
 
 	// Demo
 	.demo {
-		@include font-size(12);
-		color: #fff;
-		line-height: 2;
 		margin-bottom: $gutter-default;
-		overflow: hidden;
-		text-align: center;
-		text-overflow: ellipsis;
-		white-space: nowrap;
+		word-wrap:break-word;
+
+		span:first-child {
+			@include font-size(12);
+			color: #fff;
+			display: block;
+			line-height: 2;
+			overflow: hidden;
+			padding: 0 0.5rem;
+			text-align: center;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
 	}
 
 	.demo-a {
