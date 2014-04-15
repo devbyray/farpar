@@ -8,6 +8,21 @@ html {
 	-webkit-text-size-adjust: none;
 }
 
+// Small screen
+@media only screen and (max-width: 768px) {
+	html {
+		font-size: small;
+	}
+}
+
+// large screen
+@media only screen and (min-width: 1441px) {
+	html {
+		font-size: large;
+	}
+}
+
+
 /**
  * Heading
  */
@@ -43,12 +58,12 @@ html {
 	@include text-block();
 }
 
-.p_large {
+.p-large {
 	@extend .p;
 	@include font-size(24);
 }
 
-.p_italic {
+.p-italic {
 	@extend .p;
 	font-style: italic;
 }
@@ -63,6 +78,12 @@ html {
 	background-color: $color-darkGrey;
 	border: none;
 	height: 1px;
-	margin-bottom: 2rem;
-	margin-top: 2rem;
+	margin-bottom: $margin-double;
+	margin-top: $margin-double;
+}
+
+.hr-connected {
+	@extend .hr;
+	margin-bottom: $margin-double;
+	margin-top: $margin-single;
 }

@@ -13,6 +13,13 @@ module.exports = function (grunt) {
         },
 
         watch: {
+            html: {
+                files: ['index.html'],
+                options: {
+                    livereload: true
+                }
+            },
+
             sass: {
                 files: ['source/main.scss', 'source/global/*.scss', 'source/**/style/*.scss'],
                 tasks: ['compass:dev'],
