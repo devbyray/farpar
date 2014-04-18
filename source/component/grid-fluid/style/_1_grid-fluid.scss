@@ -55,8 +55,12 @@
 	}
 
 	// Cell
-	@mixin cell($part) {
+	%direction {
 		float: left;
+	}
+
+	@mixin cell($part) {
+		@extend %direction;
 		margin-left: $gutter-default;
 		width: calc(100% / 12 * #{ $part } - #{ $gutter-default });
 	}
@@ -187,6 +191,11 @@
 
 	// Right to left
 	&.grid-rtl {
+
+		// Cell
+		%direction {
+			float: right;
+		}
 
 		// Skip
 		@mixin skip-rtl($part) {
