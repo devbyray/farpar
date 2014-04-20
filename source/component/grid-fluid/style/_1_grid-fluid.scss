@@ -2,10 +2,18 @@
  * Grid fluid (default)
  */
 
+// Variable
+$gutter-default: 1rem;
+$gutter-small: 1rem;
+$gutter-medium: 1rem;
+$gutter-large: 1rem;
+
+// Body
  body {
  	margin: 0;
  }
 
+// Grid
 .grid-fluid {
 	margin-left: -$gutter-default;
 
@@ -54,6 +62,14 @@
 		display: none;
 	}
 
+	&.grid-gutter-0 {
+		margin-left: 0;
+
+		%ifGutter0 {
+			padding-left: 0;
+		}
+	}
+
 	// Cell
 	%direction {
 		float: left;
@@ -61,8 +77,10 @@
 
 	@mixin cell($part) {
 		@extend %direction;
-		margin-left: $gutter-default;
-		width: calc(100% / 12 * #{ $part } - #{ $gutter-default });
+		box-sizing: border-box;
+		padding-left: $gutter-default;
+		width: calc(100% / 12 * #{ $part });
+		@extend %ifGutter0;
 	}
 
 	.cell-1-12 {
@@ -131,7 +149,7 @@
 
 	// Skip
 	@mixin skip($part) {
-		margin-left: calc(100% / 12 * #{ $part } + #{ $gutter-default });
+		margin-left: calc(100% / 12 * #{ $part });
 	}
 
 	.skip-1-12 {
@@ -199,7 +217,7 @@
 
 		// Skip
 		@mixin skip-rtl($part) {
-			margin-left: $gutter-default;
+			margin-left: 0;
 			margin-right: calc(100% / 12 * #{ $part });
 		}
 

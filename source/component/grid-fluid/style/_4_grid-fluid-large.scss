@@ -24,9 +24,8 @@
 
 		// Cell
 		@mixin cell($part) {
-			float: left;
-			margin-left: $gutter-large;
-			width: calc(100% / 12 * #{ $part } - #{ $gutter-large });
+			padding-left: $gutter-large;
+			width: calc(100% / 12 * #{ $part });
 		}
 
 		.cell-large-1-12 {
@@ -95,7 +94,7 @@
 
 		// Skip
 		@mixin skip($part) {
-			margin-left: calc(100% / 12 * #{ $part } + #{ $gutter-large });
+			margin-left: calc(100% / 12 * #{ $part });
 		}
 
 		.skip-large-0 {
@@ -162,7 +161,7 @@
 
 			// Skip
 			@mixin skip-rtl($part) {
-				margin-left: $gutter-large;
+				margin-left: 0;
 				margin-right: calc(100% / 12 * #{ $part });
 			}
 

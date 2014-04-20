@@ -2,7 +2,7 @@
  * Grid fluid (medium)
  */
 
-@media only screen and (min-width: 768px) and (max-width: 1339px) {
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
 	.grid-fluid {
 		margin-left: -$gutter-medium;
 
@@ -24,9 +24,8 @@
 
 		// Cell
 		@mixin cell($part) {
-			float: left;
-			margin-left: $gutter-medium;
-			width: calc(100% / 12 * #{ $part } - #{ $gutter-medium });
+			padding-left: $gutter-medium;
+			width: calc(100% / 12 * #{ $part });
 		}
 
 		.cell-medium-1-12 {
@@ -95,7 +94,7 @@
 
 		// Skip
 		@mixin skip($part) {
-			margin-left: calc(100% / 12 * #{ $part } + #{ $gutter-medium });
+			margin-left: calc(100% / 12 * #{ $part });
 		}
 
 		.skip-medium-0 {
@@ -162,7 +161,7 @@
 
 			// Skip
 			@mixin skip-rtl($part) {
-				margin-left: $gutter-medium;
+				margin-left: 0;
 				margin-right: calc(100% / 12 * #{ $part });
 			}
 
