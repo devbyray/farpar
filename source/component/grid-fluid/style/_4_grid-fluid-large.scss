@@ -5,6 +5,7 @@
 @media only screen and (min-width: 1440px) {
 	.grid-fluid {
 		margin-left: -$gutter-large;
+		margin-right: -$gutter-large;
 
 		&.grid-padding {
 			padding-left: $gutter-large;
@@ -25,7 +26,7 @@
 		// Cell
 		@mixin cell($part) {
 			padding-left: $gutter-large;
-			width: calc(100% / 12 * #{ $part });
+			width: calc(100% / 12 * #{ $part } - ((1rem / 12) * #{ $part }));
 		}
 
 		.cell-large-1-12 {
@@ -94,7 +95,7 @@
 
 		// Skip
 		@mixin skip($part) {
-			margin-left: calc(100% / 12 * #{ $part });
+			margin-left: calc(100% / 12 * #{ $part } - ((1rem / 12) * #{ $part }));
 		}
 
 		.skip-large-0 {
@@ -162,7 +163,7 @@
 			// Skip
 			@mixin skip-rtl($part) {
 				margin-left: 0;
-				margin-right: calc(100% / 12 * #{ $part });
+				margin-right: calc(100% / 12 * #{ $part } - ((1rem / 12) * #{ $part }));
 			}
 
 			.skip-large-0 {

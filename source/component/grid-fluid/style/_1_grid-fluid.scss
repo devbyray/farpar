@@ -11,11 +11,13 @@ $gutter-large: 1rem;
 // Body
  body {
  	margin: 0;
+ 	overflow-x: hidden;
  }
 
 // Grid
 .grid-fluid {
 	margin-left: -$gutter-default;
+	margin-right: -$gutter-default;
 
 	&:after {
 		clear: both;
@@ -62,6 +64,7 @@ $gutter-large: 1rem;
 		display: none;
 	}
 
+	// Gutter 0
 	&.grid-gutter-0 {
 		margin-left: 0;
 
@@ -79,7 +82,7 @@ $gutter-large: 1rem;
 		@extend %direction;
 		box-sizing: border-box;
 		padding-left: $gutter-default;
-		width: calc(100% / 12 * #{ $part });
+		width: calc(100% / 12 * #{ $part } - ((1rem / 12) * #{ $part }));
 		@extend %ifGutter0;
 	}
 
@@ -149,7 +152,7 @@ $gutter-large: 1rem;
 
 	// Skip
 	@mixin skip($part) {
-		margin-left: calc(100% / 12 * #{ $part });
+		margin-left: calc(100% / 12 * #{ $part } - ((1rem / 12) * #{ $part }));
 	}
 
 	.skip-1-12 {
@@ -210,15 +213,26 @@ $gutter-large: 1rem;
 	// Right to left
 	&.grid-rtl {
 
+		// Gutter 0
+		&.grid-gutter-0 {
+			margin-right: 0;
+
+			%ifGutter0 {
+				padding-right: 0;
+			}
+		}
+
 		// Cell
 		%direction {
 			float: right;
+			padding-left: 0;
+			padding-right: $gutter-default;
 		}
 
 		// Skip
 		@mixin skip-rtl($part) {
 			margin-left: 0;
-			margin-right: calc(100% / 12 * #{ $part });
+			margin-right: calc(100% / 12 * #{ $part } - ((1rem / 12) * #{ $part }));
 		}
 
 		.skip-1-12 {
